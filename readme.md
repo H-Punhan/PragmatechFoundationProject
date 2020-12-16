@@ -1,3 +1,1 @@
-# Best
-## Better
-### Good
+# Sadə parol tipi dəyişitirən proqram
