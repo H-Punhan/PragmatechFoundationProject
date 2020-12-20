@@ -60,3 +60,18 @@
     background-color: #DD5781;
     color:white;
 }
+#text-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    word-break: break-all;
+}
+
+#todo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
