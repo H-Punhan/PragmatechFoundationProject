@@ -130,10 +130,13 @@
 #inner-con-2-card-text{
     width:90%;
     height:150px;
-    text-align: left;
     margin-left:5%;
     color:white;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 
 }
 
