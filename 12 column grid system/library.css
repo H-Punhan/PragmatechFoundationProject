@@ -1,3 +1,8 @@
+[class^='col']{
+    padding:10px 10px;
+    
+    box-sizing: border-box;
+}
 .col1{
     width:calc((100%/12)*1);
     
