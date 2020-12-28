@@ -1,6 +1,6 @@
 # Portfolio Proyekti
 
-## Proyekt hazırlanma mərhləsindədir
+## Proyekt hazırlanma mərhələsindədir
 
 * Folderlər yaradıldı
 * Html css faylları əlavə edıldi
