@@ -1,5 +1,9 @@
-# Pragmatech Foundation Projects
+# Portfolio Proyekti
 
+## Proyekt hazırlanma mərhləsindədir
 
-Project added
+* Folderlər yaradıldı
+* Html css faylları əlavə edıldi
+* Haqqımda seyfesi dizayn olundu
+
 
