@@ -4,6 +4,11 @@
     
     box-sizing: border-box;
 }
+
+.col0{
+    width:calc((100%/12)*0)
+}
+
 .col1{
     width:calc((100%/12)*1)
 }
@@ -97,6 +102,10 @@
     border:1px solid black;
 }
 
+.border2{
+    border:1px solid  #5C5C5C;
+}
+
 /* border ends */
 
 /* height start */
@@ -144,6 +153,13 @@
     display: flex;
     flex-direction: row;
     align-items:center;
+    justify-content: space-between;
+}
+
+.flexdisplayrownot{
+    display: flex;
+    flex-direction: row;
+    
     justify-content: space-between;
 }
 
