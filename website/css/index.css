@@ -76,35 +76,9 @@ img{
     border:1px solid #04B4E0;
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.fontsize{
+    font-size:1em;
+}
 
-.timeline-container  {
-    max-width: 1024px;
-    width: 90%;
-    margin: 0 auto;
-    border:1px solid red;
-  }
-  
-  .timeline-item {
-    padding: 3em 2em 2em;
-    position: relative;
-    border-left: 2px solid #1f78e6;
-    border:1px solid yellow;
-  }
-  
-  
-  
-  .timeline-item::after {
-    width: 15px;
-    height: 15px;
-    display: block;
-    top: 1em;
-    position: absolute;
-    left: -10px;
-    border-radius: 10px;
-    content: '';
-    border: 3px solid #04B4E0;
-    background-color: white;
-    
-  }
+
 

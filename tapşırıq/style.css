@@ -9,11 +9,11 @@
 }
 
 #container{
-    width:80%;
+    width:100%;
     display: flex;
     flex-direction: column;
    
-    margin-left:10%;
+    
     
     padding:20px 0px;
 }
