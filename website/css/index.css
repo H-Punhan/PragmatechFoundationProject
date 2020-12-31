@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
     
 }
 body,html{
@@ -59,18 +60,12 @@ img{
   
 
 }
-.loadingbarwidth70{
-    width:70%;
-}
-.loadingbarwidth95{
-    width:95%;
-}
-.loadingbarwidth60{
-    width:60%;
-}
+
 .loadingbar{
     height:4px;
 }
+
+
 
 .loadingbarborder{
     border:1px solid #04B4E0;
@@ -78,6 +73,107 @@ img{
 
 .fontsize{
     font-size:1em;
+}
+
+.backgroundimage{
+    background-image: url("https://images.unsplash.com/photo-1609342475528-dd7d93e8311e?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.backgroundimage2{
+    background-image: url("https://images.unsplash.com/photo-1604591259403-81d6c9cf87d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Sjl5clBhSFhSUVl8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+
+
+.backgroundimage3{
+    background-image: url("https://images.unsplash.com/photo-1589115210460-fac01ef605d4?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fEo5eXJQYUhYUlFZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.backgroundimage4{
+    background-image: url("https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDczfEo5eXJQYUhYUlFZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.backgroundimage i{
+    font-size:2rem;
+    visibility: hidden;
+
+}
+
+.backgroundimage2 i{
+    font-size:2rem;
+    visibility: hidden;
+    
+}
+.backgroundimage3 i{
+    font-size:2rem;
+    visibility: hidden;
+    
+}
+.backgroundimage4 i{
+    font-size:2rem;
+    visibility: hidden;
+    
+}
+
+
+.backgroundimage:hover i{
+    transition: 1s;
+    visibility: visible;
+   
+    
+    
+    
+}
+
+.backgroundimage2:hover i{
+    transition: 1s;
+    visibility: visible;
+   
+    
+    
+    
+}
+.backgroundimage3:hover i{
+    transition: 1s;
+    visibility: visible;
+   
+    
+    
+    
+}
+
+.backgroundimage4:hover i{
+    transition: 1s;
+    visibility: visible;
+   
+    
+    
+    
+}
+
+.backgroundimage:hover{
+    transition: 1s;
+    
+    transform: scale(1);
+    
 }
 
 

@@ -123,6 +123,11 @@
     border:1px solid  #5C5C5C;
 }
 
+.border3{
+    border:2px solid  #E5E5E5;
+}
+
+
 /* border ends */
 
 /* height start */
@@ -198,6 +203,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 /* display ends */
