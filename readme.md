@@ -8,3 +8,4 @@
  * biliklerim 
  * blog 
  * post 
+ * əlaqə 
