@@ -45,6 +45,31 @@ img{
     
 }
 
+#responsive-header{
+    position: fixed;
+    display: none;
+    left:20px;
+    top:20px;
+    background-color: rgba(0,0,0, 0.1);
+    padding: 5px;
+}
+
+#responsive-nav-bar{
+    
+    position: fixed;
+    right: 0%;
+    overflow: hidden;
+    background-color: #04B4E0;
+    height: 0%;
+    width:0%;
+    transition: 0.5s;
+}
+
+#profile-icon{
+    display: none;
+    
+}
+
 #iconhover:hover #icontext{
    
  display:block;
@@ -100,6 +125,7 @@ img{
    
     
 }
+
 
 
 .backgroundimage3{
