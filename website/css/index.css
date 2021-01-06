@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
@@ -29,6 +29,19 @@ body,html{
     
 
 }
+
+.fontsizeh1{
+    font-size:3vw;
+}
+
+.fontsizep{
+    font-size:1.5vw;
+}
+
+.fontsizepsmall{
+    font-size:1.1vw;
+}
+
 
 
 .box{
@@ -145,70 +158,35 @@ img{
     
 }
 
-.backgroundimage i{
-    font-size:2rem;
-    visibility: hidden;
+.cardbox img{
+   transition: 1s;
+ }
 
-}
-
-.backgroundimage2 i{
-    font-size:2rem;
-    visibility: hidden;
-    
-}
-.backgroundimage3 i{
-    font-size:2rem;
-    visibility: hidden;
-    
-}
-.backgroundimage4 i{
-    font-size:2rem;
-    visibility: hidden;
-    
+.cardbox:hover img{
+   transform:scale(1.2)
 }
 
-
-.backgroundimage:hover i{
-    transition: 1s;
-    visibility: visible;
-   
-    
-    
-    
+.cardbox i{
+    display: none;
+    z-index: 1;
 }
 
-.backgroundimage2:hover i{
-    transition: 1s;
-    visibility: visible;
-   
-    
-    
-    
-}
-.backgroundimage3:hover i{
-    transition: 1s;
-    visibility: visible;
-   
-    
-    
-    
+.cardbox:hover i{
+    display: block;
 }
 
-.backgroundimage4:hover i{
-    transition: 1s;
-    visibility: visible;
-   
-    
-    
-    
+.cardbox .overlay{
+    width:0px;
+    padding:0px;
+    transition: 0.1s;
 }
 
-.backgroundimage:hover{
-    transition: 1s;
-    
-    transform: scale(1);
-    
-}
+ .cardbox:hover .overlay{
+    display: block;
+    width:100%
+} 
+
+
 
 
 
@@ -264,7 +242,7 @@ img{
 }
 
 .overflowhide{
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -299,6 +277,10 @@ img{
 .textcolorblack2{
     color:black;
 }
+
+.textcolorblack3{
+    color:black;
+}
 .textcolorblack2:hover{
     color:white;
 }
@@ -329,6 +311,10 @@ img{
 }
 .bgcolorwhite2:hover{
     background-color:#04B4E0;
+}
+
+.bgcolorblackoverlay{
+    background: rgba(0,0,0, 0.5);
 }
 
 .shadow{
@@ -368,6 +354,18 @@ img{
 
 
 /* border ends */
+
+/* position start */
+
+.position-absolute{
+    position:absolute;
+
+}
+.position-relative{
+    position: relative;
+}
+/* position ends */
+
 
 
 
