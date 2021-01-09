@@ -1,0 +1,342 @@
+#lorem {
+  overflow-y: auto;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+}
+
+#responsive-menu {
+  display: none;
+  overflow: hidden;
+}
+
+#responsive-menu-button {
+  display: none;
+}
+
+/* width start */
+[class^='col'] {
+  padding: 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col0 {
+  width: calc((100%/12)*0);
+}
+
+.col1 {
+  width: calc((100%/12)*1);
+}
+
+.col2 {
+  width: calc((100%/12)*2);
+}
+
+.col3 {
+  width: calc((100%/12)*3);
+}
+
+.col4 {
+  width: calc((100%/12)*4);
+}
+
+.col5 {
+  width: calc((100%/12)*5);
+}
+
+.col6 {
+  width: calc((100%/12)*6);
+}
+
+.col7 {
+  width: calc((100%/12)*7);
+}
+
+.col8 {
+  width: calc((100%/12)*8);
+}
+
+.col9 {
+  width: calc((100%/12)*9);
+}
+
+.col10 {
+  width: calc((100%/12)*10);
+}
+
+.col11 {
+  width: calc((100%/12)*11);
+}
+
+.col12 {
+  width: calc((100%/12)*12);
+}
+
+/* width ends */
+/* height start */
+.height {
+  height: 100%;
+}
+
+.height90 {
+  height: 90%;
+}
+
+.height80 {
+  height: 80%;
+}
+
+.height70 {
+  height: 70%;
+}
+
+.height60 {
+  height: 60%;
+}
+
+.height50 {
+  height: 50%;
+}
+
+.height40 {
+  height: 40%;
+}
+
+.height30 {
+  height: 30%;
+}
+
+.height20 {
+  height: 20%;
+}
+
+.box {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#container {
+  width: 95%;
+  height: 80%;
+  overflow: hidden;
+  margin-left: 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  background-color: #04B4E0;
+}
+
+#inner-container-container {
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+}
+
+#inner-container-profile {
+  border-radius: 30px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#inner-container-profile-img-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3vw;
+  border: none;
+}
+
+#inner-container-profile-img-div #profile-div-text {
+  width: 80%;
+  text-align: center;
+}
+
+#inner-container-profile-img-div img {
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid white;
+}
+
+#inner-container-profile-img-div #inner-container-profile-social-icon {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#inner-container-profile-img-div #inner-container-profile-social-icon a {
+  color: white;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+#navbar a {
+  color: black;
+}
+
+#navbar a:hover {
+  color: #04B4E0;
+}
+
+#navbar a:hover span {
+  right: 58px;
+}
+
+#navbar-nav-icons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 30px;
+  background-color: white;
+}
+
+#navbar-nav-icons span {
+  right: -200px;
+  position: absolute;
+  padding: 5px;
+  background-color: #04B4E0;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar-nav-arrows {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+@media (max-width: 1200px) {
+  #responsive-menu {
+    height: 100%;
+    width: 0%;
+    background-color: #04B4E0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: block;
+  }
+  #responsive-menu-button {
+    display: block;
+    position: absolute;
+    background-color: #04B4E0;
+    color: white;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+  }
+  #container {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  #inner-container0 {
+    width: 100%;
+    padding: 0%;
+  }
+  #inner-container {
+    border-radius: 0%;
+    border: none;
+  }
+  #navbar {
+    display: none;
+  }
+  #inner-container-profile {
+    display: none;
+  }
+  #inner-container-container {
+    width: 100%;
+    border-radius: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
