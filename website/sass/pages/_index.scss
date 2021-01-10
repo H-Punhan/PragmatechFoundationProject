@@ -1,8 +1,6 @@
 // Main website structure
 
-#lorem{
-    overflow-y: auto;
-}
+
 
 *{
     margin:0px;
@@ -28,6 +26,15 @@ body,html{
 }
 
 #responsive-menu-button{
+    display: none;
+}
+
+#responsive-header{
+    padding:5px;
+    background-color: white;
+    position: fixed;
+    top:10px;
+    left:10px;
     display: none;
 }
 
@@ -123,7 +130,7 @@ body,html{
 // box
 .box{
     width:100%;
-    border:1px solid $main-color-black;
+   ;
 }
 
 
@@ -134,6 +141,7 @@ body,html{
     margin-left:2.5%;
     display: flex;
     
+    
    
 }
 
@@ -142,6 +150,7 @@ body,html{
     display: flex;
     border-radius:30px;
     background-color: $main-color-blue;
+    box-shadow: 0px 0px 4px $main-color-black;
    
 
    
@@ -211,6 +220,7 @@ body,html{
     border:none;
     
     
+    
 }
 
 #navbar a{
@@ -241,6 +251,7 @@ body,html{
     justify-content: space-evenly;
     border-radius: 30px;
     background-color: $main-color-white;
+    box-shadow: 0px 0px 4px $main-color-black;
     
 }
 
@@ -262,6 +273,7 @@ body,html{
     justify-content: space-evenly;
     align-items: center;
     background-color: $main-color-white;
+    box-shadow: 0px 0px 4px $main-color-black;
 }
 
 
@@ -294,6 +306,11 @@ body,html{
        
 
 
+    }
+
+    #responsive-header{
+        
+        display: block;
     }
 
     #container{

@@ -1,0 +1,129 @@
+#resume-div{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#resume-div-row{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+// loading bars
+
+#skill-bar-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#skill-bar-text p{
+    
+    color:$main-color-grey;
+    
+}
+
+
+.skill-bar-html{
+   
+    border:1px solid $main-color-blue;
+    border-radius: 10px;
+    height:7px;
+    padding:1px;
+    
+    
+}
+
+.skill-bar-html .box {
+    width:90%;
+    background-color: $main-color-blue;
+    height:100%;
+}
+
+
+.skill-bar-javascript{
+   
+    border:1px solid $main-color-blue;
+    border-radius: 10px;
+    height:7px;
+    padding:1px;
+    
+    
+}
+
+.skill-bar-javascript .box {
+    width:70%;
+    background-color: $main-color-blue;
+    height:100%;
+}
+
+
+.skill-bar-sql{
+   
+    border:1px solid $main-color-blue;
+    border-radius: 10px;
+    height:7px;
+    padding:1px;
+    
+    
+}
+
+.skill-bar-sql .box {
+    width:40%;
+    background-color: $main-color-blue;
+    height:100%;
+}
+
+.skill-bar-python{
+   
+    border:1px solid $main-color-blue;
+    border-radius: 10px;
+    height:7px;
+    padding:1px;
+    
+    
+}
+
+.skill-bar-python .box {
+    width:1%;
+    background-color: $main-color-blue;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+// Medias 
+@media(max-width:756px){
+
+    #resume-div-row{
+        flex-direction: column;
+    }
+
+    #resume-div-education{
+        width:100%;
+
+    }
+
+    #resume-div-skills{
+        width:100%;
+        
+    }
+
+}
+
+
+
+

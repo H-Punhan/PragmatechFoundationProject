@@ -1,0 +1,114 @@
+// About div css
+#about-div{
+    width:90%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    margin-left:5%;
+    overflow-y: auto;
+    word-wrap: break-word;
+
+
+}
+
+#about-div-row{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-div-image{
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#about-div-image img{
+    
+    border-radius: 100%;
+    box-shadow: 0px 0px 11px  black;
+    border:10px solid white;
+    object-fit: cover;
+    border:5px solid white;
+    
+}
+
+#about-div-text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    
+   
+    
+    
+    
+}
+
+#about-div-text p{
+    color:$main-color-grey;
+}
+
+
+
+
+
+
+
+
+// medias
+
+@media(max-width:756px){
+    
+#about-div{
+    flex-direction: column;
+    
+    
+}
+
+#about-div-row{
+    flex-direction: column;
+}
+
+    
+#about-div-image{
+    width:100%;
+    height:auto;
+    align-items:center;
+    justify-content: center;
+    
+    
+}
+#about-div-text{
+    width:100%;
+    height: auto;
+    font-size: 4vw;
+    justify-content: flex-start;
+    
+    
+}
+
+
+#about-div-text h1{
+    text-align: center;
+}
+
+.about-div-p{
+    text-align: center;
+    
+}
+
+#about-div img{
+    width:100px;
+    height:100px;
+    box-shadow:0px 0px 5px $main-color-black ;
+}
+
+
+
+}
