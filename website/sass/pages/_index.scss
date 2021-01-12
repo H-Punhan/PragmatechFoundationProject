@@ -7,6 +7,7 @@
     padding:0px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    outline: none;
 
 
 }
@@ -27,6 +28,7 @@ body,html{
 
 #responsive-menu-button{
     display: none;
+    z-index: 100;
 }
 
 #responsive-header{
@@ -36,6 +38,7 @@ body,html{
     top:10px;
     left:10px;
     display: none;
+    z-index: 100;
 }
 
 /* width start */
@@ -232,11 +235,11 @@ body,html{
 #navbar a:hover{
     color:$main-color-blue;
     
-    
-}
-
-#navbar a:hover span{
-    right:58px;
+    span{
+        right:58px;
+        
+        
+    }
     
     
 }
