@@ -1,16 +1,27 @@
 #resume-div{
-    width:100%;
+    width:90%;
     height:100%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    margin-left:5%;
+    
 }
 
 #resume-div-row{
     display: flex;
     flex-direction: row;
+    padding:0px;
     
     
+}
+
+#resume-div-education{
+    padding:0px;
+}
+
+#resume-div-skills{
+    padding:0px;
 }
 
 // loading bars
@@ -20,12 +31,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-size:15px;
     
 }
 
 #skill-bar-text p{
     
     color:$main-color-grey;
+    font-size:12px;
     
 }
 

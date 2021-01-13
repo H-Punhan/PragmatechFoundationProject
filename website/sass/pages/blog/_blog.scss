@@ -1,6 +1,8 @@
 #blog-div{
+    width:90%;
     height:100%;
     overflow-y: auto;
+    margin-left: 5%;
 }
 
 #blog-div-header h1{
@@ -134,7 +136,7 @@
 
 #blog-div-button{
     transition: 0.4s;
-    padding:5px;
+    padding:10px;
     border-radius: 20px;
     color:$main-color-black;
     background-color: $main-color-white;
