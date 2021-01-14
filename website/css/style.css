@@ -18,14 +18,83 @@ body, html {
   background-color: whitesmoke;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
 #responsive-menu {
   display: none;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+#responsive-menu img {
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+#responsive-menu #responsive-menu-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.5vw;
+}
+
+#responsive-menu #responsive-menu-2 #responsive-menu-links {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#responsive-menu #responsive-menu-2 #responsive-menu-links a {
+  color: white;
+}
+
+#responsive-menu #responsive-menu-social-icon {
+  color: white;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#responsive-menu #responsive-menu-social-icon a {
+  color: white;
 }
 
 #responsive-menu-button {
   display: none;
   z-index: 100;
+  font-size: 25px;
+  text-align: center;
 }
 
 #responsive-header {
@@ -35,7 +104,7 @@ body, html {
   top: 10px;
   left: 10px;
   display: none;
-  z-index: 100;
+  z-index: 90;
 }
 
 /* width start */
@@ -163,6 +232,10 @@ body, html {
   background-color: white;
   border-radius: 30px;
   border: none;
+}
+
+#inner-container-container:hover ::-webkit-scrollbar-thumb {
+  background: #556265;
 }
 
 #inner-container-profile {
@@ -354,6 +427,80 @@ body, html {
   #inner-container-container {
     width: 100%;
     border-radius: 0%;
+  }
+}
+
+@media (max-width: 756px) {
+  #responsive-menu img {
+    width: 100px;
+    height: 100px;
+  }
+  #responsive-menu #responsive-menu-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 3vw;
+  }
+  #responsive-menu #responsive-menu-2 #responsive-menu-links {
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #responsive-menu #responsive-menu-2 #responsive-menu-links a {
+    color: white;
+  }
+  #responsive-menu #responsive-menu-social-icon {
+    color: white;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #responsive-menu #responsive-menu-social-icon a {
+    color: white;
+  }
+}
+
+@media (max-width: 356px) {
+  #responsive-menu img {
+    width: 100px;
+    height: 100px;
+  }
+  #responsive-menu #responsive-menu-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 5vw;
   }
 }
 
@@ -812,7 +959,7 @@ body, html {
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part {
-  height: 200px;
+  height: 490px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,17 +967,16 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part input {
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px;
   border: 1px solid #556265;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  width: 100%;
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part input:focus {
@@ -838,10 +984,11 @@ body, html {
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part textarea {
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 5px;
   border: 1px solid #556265;
   height: 300px;
+  width: 100%;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -865,6 +1012,10 @@ body, html {
   color: white;
 }
 
+#contact-div-row-part-1 h3 {
+  font-size: 1vw;
+}
+
 @media (max-width: 756px) {
   #contact-div-row {
     -webkit-box-orient: vertical;
@@ -879,7 +1030,7 @@ body, html {
     font-size: 6vw;
   }
   #contact-div-row-part-1 h3 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   #contact-div-row-part-2 {
     width: 100%;

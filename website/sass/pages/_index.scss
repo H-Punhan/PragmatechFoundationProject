@@ -9,6 +9,7 @@
     text-decoration: none;
     outline: none;
     
+    
 
 
 }
@@ -20,16 +21,72 @@ body,html{
     align-items: center;
     background-color: whitesmoke;
     
+    
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+    
+  }
+::-webkit-scrollbar-thumb{
+    background: none; 
+    
+  }
+
+
 
 #responsive-menu{
     display: none;
     overflow: hidden;
+    transition: 0.5s;
+    z-index: 99;
+    
+    img{
+        border-radius: 100%;
+        border:2px solid $main-color-white;
+    }
+
+    #responsive-menu-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:$main-color-white;
+        font-size:1.5vw;
+        
+        #responsive-menu-links{
+            height:60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            a{
+                color:$main-color-white;
+            }
+        }
+
+        
+    }
+
+    #responsive-menu-social-icon{
+        color:$main-color-white;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color:$main-color-white;
+        }
+    }
 }
+
+
+
 
 #responsive-menu-button{
     display: none;
     z-index: 100;
+    font-size:25px;
+    text-align: center;
 }
 
 #responsive-header{
@@ -39,7 +96,7 @@ body,html{
     top:10px;
     left:10px;
     display: none;
-    z-index: 100;
+    z-index: 90;
 }
 
 /* width start */
@@ -156,6 +213,7 @@ body,html{
     background-color: $main-color-blue;
     box-shadow: 0px 0px 4px $main-color-black;
     
+    
    
 
    
@@ -168,6 +226,11 @@ body,html{
     background-color: $main-color-white;
     border-radius: 30px;
     border:none;
+    &:hover{
+        ::-webkit-scrollbar-thumb{
+            background: $main-color-grey; 
+        }
+    }
     
 }
 
@@ -297,6 +360,11 @@ body,html{
         right:0px;
         top:0px;
         display: block;
+        
+
+            
+        
+        
     }
     #responsive-menu-button{
         
@@ -352,6 +420,74 @@ body,html{
     }
 }
 
+@media(max-width:756px){
+    
+    #responsive-menu{
+        
+            
+        
+        
+    img{
+        width:100px;
+        height:100px;
+    }
+
+    #responsive-menu-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:$main-color-white;
+        font-size:3vw;
+        
+        #responsive-menu-links{
+            height:60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            a{
+                color:$main-color-white;
+            }
+        }
+
+        
+    }
+
+    #responsive-menu-social-icon{
+        color:$main-color-white;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color:$main-color-white;
+        }
+    }
+}
+}
+
+@media(max-width:356px){
+    
+    #responsive-menu{
+        
+            
+        
+        
+    img{
+        width:100px;
+        height:100px;
+    }
+
+    #responsive-menu-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:$main-color-white;
+        font-size:5vw;
+    }
+
+   
+}
+}
 
 
 

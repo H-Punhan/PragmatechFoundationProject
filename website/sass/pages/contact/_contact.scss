@@ -46,26 +46,29 @@
         padding:0px;
         flex-direction: column;
         #contact-div-row-part-2-row-part{
-            height:200px;
+            height:490px;
             display:flex;
             flex-direction: column;
-            justify-content: space-between;
+            
             
             input{
-                padding:10px;
-                border-radius: 10px;
+                padding:5px;
+                height:30px;
+                border-radius: 5px;
                 border:1px solid $main-color-grey;
                 transition: 0.1s;
+                width:100%;
                 &:focus{
                     border:2px solid $main-color-blue;
                 }
 
             }
             textarea{
-                padding:10px;
-                border-radius: 10px;
+                padding:5px;
+                border-radius: 5px;
                 border:1px solid $main-color-grey;
                 height:300px;
+                width:100%;
                 transition: 0.1s;
                 &:focus{
                     border:2px solid $main-color-blue;
@@ -96,6 +99,14 @@
     
 }
 
+#contact-div-row-part-1{
+    
+    h3{
+        font-size: 1vw;
+    }
+
+}
+
 @media(max-width:756px){
     #contact-div-row{
     
@@ -111,7 +122,7 @@
             
         }
         h3{
-            font-size: 3vw;
+            font-size: 2vw;
         }
 
     }
