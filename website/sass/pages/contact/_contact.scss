@@ -58,6 +58,7 @@
                 border:1px solid $main-color-grey;
                 transition: 0.1s;
                 width:100%;
+                box-sizing: border-box;
                 &:focus{
                     border:2px solid $main-color-blue;
                 }
@@ -70,6 +71,7 @@
                 height:300px;
                 width:100%;
                 transition: 0.1s;
+                box-sizing: border-box;
                 &:focus{
                     border:2px solid $main-color-blue;
                 }

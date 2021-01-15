@@ -1,0 +1,91 @@
+#post-div{
+    width:90%;
+    height:100%;
+    overflow-y: auto;
+    margin-left:5%;
+    font-size:1.3vw;
+    img{
+        max-width:100%;
+        height:auto;
+        object-fit: cover;
+    }
+
+    #post-div-text{
+
+        color:$main-color-grey;
+
+    }
+
+    #post-div-about{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:$main-color-grey;
+        justify-content: space-between;
+        
+        
+        #post-div-about-2{
+            border:1px solid $main-color-grey;
+            border-radius: 5px;
+            width: 100%;;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+
+        #post-div-about-icons{
+            
+            width:20%;
+            display: flex;
+            justify-content: space-between;
+            
+        
+        }
+        
+    }
+
+    #post-div-comment{
+        display: flex;
+        flex-direction: column;
+        input,textarea{
+            width:100%;
+            border-radius: 7px;
+            border:1px solid $main-color-grey;
+            padding:10px;
+            box-sizing: border-box;
+            &:focus{
+                border: 1px solid $main-color-blue;
+            }
+        }
+
+        #checkbox{
+            display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        input{
+            width:auto;
+            
+        }
+        }
+
+        
+        
+    }
+
+    @media(max-width:1200px){
+        font-size:1.4vw;
+        
+    }
+
+    @media(max-width:756px){
+        font-size:4vw;
+    }
+
+    @media(max-width:360px){
+        font-size:3vw;
+        
+    }
+
+}

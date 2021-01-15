@@ -977,6 +977,8 @@ body, html {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part input:focus {
@@ -991,6 +993,8 @@ body, html {
   width: 100%;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact-div-row-part-2 #contact-div-row-part-2-row #contact-div-row-part-2-row-part textarea:focus {
@@ -1034,6 +1038,126 @@ body, html {
   }
   #contact-div-row-part-2 {
     width: 100%;
+  }
+}
+
+#post-div {
+  width: 90%;
+  height: 100%;
+  overflow-y: auto;
+  margin-left: 5%;
+  font-size: 1.3vw;
+}
+
+#post-div img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#post-div #post-div-text {
+  color: #556265;
+}
+
+#post-div #post-div-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #556265;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#post-div #post-div-about #post-div-about-2 {
+  border: 1px solid #556265;
+  border-radius: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#post-div #post-div-about #post-div-about-icons {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#post-div #post-div-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#post-div #post-div-comment input, #post-div #post-div-comment textarea {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #556265;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#post-div #post-div-comment input:focus, #post-div #post-div-comment textarea:focus {
+  border: 1px solid #04B4E0;
+}
+
+#post-div #post-div-comment #checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#post-div #post-div-comment #checkbox input {
+  width: auto;
+}
+
+@media (max-width: 1200px) {
+  #post-div {
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 756px) {
+  #post-div {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 360px) {
+  #post-div {
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
