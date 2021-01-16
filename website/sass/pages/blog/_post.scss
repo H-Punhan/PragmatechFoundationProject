@@ -3,7 +3,7 @@
     height:100%;
     overflow-y: auto;
     margin-left:5%;
-    font-size:1.3vw;
+    font-size:20px;
     img{
         max-width:100%;
         height:auto;
@@ -46,14 +46,14 @@
     }
 
     #post-div-comment{
-        display: flex;
-        flex-direction: column;
+        
         input,textarea{
             width:100%;
             border-radius: 7px;
             border:1px solid $main-color-grey;
             padding:10px;
             box-sizing: border-box;
+            
             &:focus{
                 border: 1px solid $main-color-blue;
             }
@@ -64,10 +64,28 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        
         input{
             width:auto;
             
+            
         }
+        }
+
+        #post-div-comment-button{
+            padding:10px;
+            border-radius: 20px;
+            border:2px solid $main-color-blue;
+            background-color: $main-color-white;
+            width:auto;
+            transition: 0.5s;
+           
+            &:hover{
+                
+            background-color: $main-color-blue;
+            color:$main-color-white;
+            }
+
         }
 
         
@@ -75,16 +93,16 @@
     }
 
     @media(max-width:1200px){
-        font-size:1.4vw;
+        font-size:20px;
         
     }
 
     @media(max-width:756px){
-        font-size:4vw;
+        font-size:20px;
     }
 
     @media(max-width:360px){
-        font-size:3vw;
+        font-size:15px;
         
     }
 

@@ -24,6 +24,7 @@
     height:110px;
     border-radius: 10px;
     border:1px solid lightgray;
+    background-color:whitesmoke;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -52,7 +53,7 @@
             
             
             input{
-                padding:5px;
+                padding:10px;
                 height:30px;
                 border-radius: 5px;
                 border:1px solid $main-color-grey;
@@ -65,7 +66,7 @@
 
             }
             textarea{
-                padding:5px;
+                padding:10px;
                 border-radius: 5px;
                 border:1px solid $main-color-grey;
                 height:300px;
