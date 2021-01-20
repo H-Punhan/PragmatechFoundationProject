@@ -11,6 +11,7 @@
 // array
 let ededler=[1,3,4,90,23,890,12,30,4,3,67,21,10]
 
+
 // arraydeki ededlerin cemi 
 let cemi=0
 
@@ -71,7 +72,19 @@ tekEdedler()
 //-------------------------------------------
 
 function tekrarEdedler(){
-    console.log('4-Tekrar ededler tapilmadi')
+    cemi=0
+    let b=0
+    for(let i=0;i<ededlerlen;i++){
+        
+        for(let c=i+1;c<ededlerlen;c++){
+            if(ededler[i]==ededler[c]){
+                cemi+=1
+                
+            }
+        }
+
+    }
+    console.log('4-Tekrar eden eded sayi  tapildi '+cemi)
     
 }
 tekrarEdedler()
@@ -99,7 +112,7 @@ ikireqemliEdedler()
 function azalanEdedler(){
     
     
-    console.log('6-Artan sira ile yazilmayib')
+    console.log('6-')
     
 
     

@@ -211,7 +211,7 @@ body, html {
 #container {
   width: 95%;
   height: 80%;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-left: 2.5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,8 +224,8 @@ body, html {
   display: flex;
   border-radius: 30px;
   background-color: #04B4E0;
-  -webkit-box-shadow: 0px 0px 4px black;
-          box-shadow: 0px 0px 4px black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
 }
 
 #inner-container-container {
@@ -343,8 +343,8 @@ body, html {
           justify-content: space-evenly;
   border-radius: 30px;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 4px black;
-          box-shadow: 0px 0px 4px black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
 }
 
 #navbar-nav-icons span {
@@ -375,8 +375,8 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 4px black;
-          box-shadow: 0px 0px 4px black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
 }
 
 @media (max-width: 1200px) {
@@ -577,6 +577,10 @@ body, html {
   -webkit-box-shadow: 0px 0px 10px black;
           box-shadow: 0px 0px 10px black;
   text-align: center;
+}
+
+#about-div-text2 {
+  color: #556265;
 }
 
 #about-div-text2 {

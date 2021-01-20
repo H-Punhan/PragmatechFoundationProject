@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+
+
+    <script>
+
+        let masinlar=[]
+
+        class Masin{
+
+            constructor(name,motor,color,horse_power){
+                this.name=name
+                this.motor=motor
+                this.color=color
+                this.horse_power=horse_power
+
+            }
+
+            showcardetails(){
+                console.log('name-'+this.name)
+                console.log('motor-'+this.motor)
+                console.log('color-'+this.color)
+                console.log('horse power-'+this.horse_power)
+
+            }
+        }
+
+        masinlar=[
+            new Masin('Bmw','6.0','black',300),
+            new Masin('Mercedes','2.5','grey',162),
+            new Masin('Opel','2.0','red',200)
+        ]
+
+
+        function showbycarname(carname){
+            for(let i=0;i<masinlar.length;i++){
+                if(carname==masinlar[i].name){
+                    console.log(masinlar[i])
+                }
+            }
+        }
+
+        showbycarname('Bmw');
+
+        function showbycarcolor(carcolor){
+            for(let i=0;i<masinlar.length;i++){
+                if(carcolor==masinlar[i].color){
+                    console.log(masinlar[i])
+                }
+            }
+        }
+
+        showbycarcolor('red');
+
+
+    </script>
+    
+</body>
+</html>
