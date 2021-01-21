@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapsiriq 2</title>
+</head>
+<body>
+    <script>
+
+userList=[
+    {
+        name:'Sabir',
+        email:'sabir@mail.com',
+        userTasks:[
+            {
+                taskName:'Task01',
+                taskDeadline:2
+            },
+            {
+                taskName:'Task02',
+                taskDeadline:8
+            },
+            {
+                taskName:'Task03',
+                taskDeadline:10
+            }
+
+        ]
+    },
+    {
+        name:'Hesen',
+        email:'hesen.mail.com',
+        userTasks:[
+            {
+                taskName:'XTask01',
+                taskDeadline:2
+            },
+            {
+                taskName:'XTask02',
+                taskDeadline:15
+            },
+            {
+                taskName:'XTask03',
+                taskDeadline:4
+            }
+
+        ]
+    }
+]
+
+
+function findUserTasksByName(userName){
+    for(let a=0;a<userList.length;a++){
+        if(userList[a].name==userName){
+            console.log( userList[a].userTasks)
+        }
+        
+    }
+} 
+
+findUserTasksByName('Sabir')
+
+ function userEmailCheck(){
+    for(let i=0;i<userList.length;i++){
+        if(userList[i].email.indexOf('@')<1){
+            console.log(userList[i].name +"-in emaili duzgun deyil");
+        }
+        
+    }
+} 
+
+userEmailCheck()
+
+function findLongestDeadline(){
+    console.log('yerine yetirilmeyib')
+}
+findLongestDeadline()
+
+
+    </script>
+</body>
+</html>
