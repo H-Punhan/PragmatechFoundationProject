@@ -571,12 +571,19 @@ body, html {
           align-items: center;
 }
 
-#about-div-img img {
+#about-div-img #img {
   border: 10px solid white;
   border-radius: 100%;
   -webkit-box-shadow: 0px 0px 10px black;
           box-shadow: 0px 0px 10px black;
   text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQYg1cS6FRd7VyzcLwE6BOUf7vpynzbqt3A&usqp=CAU");
+  background-size: cover;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #about-div-text2 {

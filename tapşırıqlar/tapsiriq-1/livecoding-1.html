@@ -4,61 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise</title>
+    <style>
+        #img-div{
+  width:150px;
+  height:150px;
+  border-radius:100%;
+  overflow:hidden;
+  box-shadow:0px 0px 10px black;
+  border:5px solid white;
+  margin:20% auto;
+  position: relative;
+  background-image:url('https://lmpixels.com/wp/breezycv-wp-lin/demo7/wp-content/uploads/sites/16/2020/10/cesar-rincon-e1603450103671.jpg') ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  
+  
+}
+
+    </style>
 </head>
 <body>
 
-
+    <div id='img-div'>
+        
+        
+      </div>
     <script>
 
-        let masinlar=[]
+let img=document.getElementById('img-div')
+let x=0
+let y=0
+window.addEventListener('mousemove',(m)=>{
+  
 
-        class Masin{
-
-            constructor(name,motor,color,horse_power){
-                this.name=name
-                this.motor=motor
-                this.color=color
-                this.horse_power=horse_power
-
-            }
-
-            showcardetails(){
-                console.log('name-'+this.name)
-                console.log('motor-'+this.motor)
-                console.log('color-'+this.color)
-                console.log('horse power-'+this.horse_power)
-
-            }
-        }
-
-        masinlar=[
-            new Masin('Bmw','6.0','black',300),
-            new Masin('Mercedes','2.5','grey',162),
-            new Masin('Opel','2.0','red',200)
-        ]
-
-
-        function showbycarname(carname){
-            for(let i=0;i<masinlar.length;i++){
-                if(carname==masinlar[i].name){
-                    console.log(masinlar[i])
-                }
-            }
-        }
-
-        showbycarname('Bmw');
-
-        function showbycarcolor(carcolor){
-            for(let i=0;i<masinlar.length;i++){
-                if(carcolor==masinlar[i].color){
-                    console.log(masinlar[i])
-                }
-            }
-        }
-
-        showbycarcolor('red');
+if(m.offsetX<window.innerWidth/2){
+    if(x<10){
+        x+=0.5
+        
+        
+    }
+    
+    img.style.backgroundPositionX=x+'px';
+    
+}
+else{
+    if(x>-10){
+        x-=0.5
+        
+       
+    }
+    
+    img.style.backgroundPositionX=x+'px';
+    
+}
+// y offset
+if(m.offsetY<window.innerHeight/2){
+    if(y<10){
+            y+=0.5
+        
+    }
+    
+    img.style.backgroundPositionY=y+'px';
+    
+}
+else{
+    if( y>-10){
+        y-=0.5
+       
+    }
+    
+    img.style.backgroundPositionY=y+'px';
+    
+}
 
 
+
+
+ 
+
+    
+})
     </script>
     
 </body>

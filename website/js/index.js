@@ -5,6 +5,14 @@ let responsive_button=document.getElementById('responsive-menu-button');
 
 let responsive_menu=document.getElementById('responsive-menu');
 
+
+let img=document.getElementById('img')
+let imgx=0;
+let imgy=0;
+
+
+
+
 // add event to button
 
 responsive_button.addEventListener('click',()=>{
@@ -14,7 +22,7 @@ responsive_button.addEventListener('click',()=>{
 })
 
 // functions
-
+// responsive menu function
 function openMenu(){
     
     
@@ -46,5 +54,74 @@ function openMenu(){
 
 
 }
+//  img effect function 
+// window.addEventListener('mousemove',(mouse)=>{
+    
+//     if(window.innerWidth>1200){
+
+    
+//     img.style.backgroundPositionX+=mouse.offsetX;
+    
+//     console.log(img.style.backgroundPositionX)
+    
+    
+    
+
+
+//     // if(mouse.offsetX>window.innerWidth/2){
+        
+//     //     if(imgx<5){
+//     //         imgx+=1
+//     //         console.log(imgx)
+//     //     }
+
+        
+        
+//     //     img.style.backgroundPositionX=imgx+"px";
+        
+
+//     // }
+
+//     // else{
+        
+
+//     //     if(imgx>-10){
+//     //         imgx-=1
+//     //         console.log(imgx)
+//     //     }
+//     //     img.style.backgroundPositionX=imgx+"px";
+
+//     // }
+
+//     if(mouse.offsetY>window.innerHeight/2){
+       
+//         if(imgy<10){
+//             imgy+=1
+//             console.log(imgy)
+//         }
+
+        
+        
+//         img.style.backgroundPositionY=imgy+"px";
+        
+
+//     }
+
+//     else{
+        
+//         if(imgy>-10){
+//             imgy-=1
+//             console.log(imgy)
+//         }
+//         img.style.backgroundPositionY=imgy+"px";
+
+//     }
+// }
+// else{
+
+//     img.style.backgroundPositionY=0+"px";
+
+// }
+// })
 
 
