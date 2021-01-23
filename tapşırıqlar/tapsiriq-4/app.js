@@ -28,7 +28,8 @@ function slider(buttonId){
 
     if(buttonId=='right'){
         
-        document.getElementById('sekil-'+imageindex).style.width='0%';
+        document.getElementById('sekil-'+imageindex).style.left='-100%';
+        document.getElementById('sekil-'+imageindex).style.top='-100%';
         document.getElementById('p'+imageindex).className='nactive';
         imageindex++;
       
@@ -36,21 +37,28 @@ function slider(buttonId){
             imageindex=1
         }
         
-        document.getElementById('sekil-'+imageindex).style.width='100%';
+      
+        document.getElementById('sekil-'+imageindex).style.left='0%';
+        document.getElementById('sekil-'+imageindex).style.top='0%';
         document.getElementById('description').innerHTML=document.getElementById('sekil-'+imageindex).className;
         document.getElementById('p'+imageindex).className='active';
 
     }
 
     if(buttonId=='left'){
-        document.getElementById('sekil-'+imageindex).style.width='0px'
-        document.getElementById('p'+imageindex).className='nactive'
+    
+        document.getElementById('sekil-'+imageindex).style.left='-100%';
+        document.getElementById('sekil-'+imageindex).style.top='-100%';      
+        document.getElementById('p'+imageindex).className='nactive';
         imageindex--;
      
         if(imageindex<1){
             imageindex=4
         }
-        document.getElementById('sekil-'+imageindex).style.width='100%';
+     
+       
+        document.getElementById('sekil-'+imageindex).style.left='-0%';
+        document.getElementById('sekil-'+imageindex).style.top='0%';
         document.getElementById('description').innerHTML=document.getElementById('sekil-'+imageindex).className;
         document.getElementById('p'+imageindex).className='active'
         
@@ -62,14 +70,15 @@ function slider(buttonId){
 function slider2(btnvalue){
     
 
-    document.getElementById('sekil-'+imageindex).style.width='0%';
+    
+    document.getElementById('sekil-'+imageindex).style.left='-100%';
+    document.getElementById('sekil-'+imageindex).style.top='-100%';
     document.getElementById('p'+imageindex).className='nactive';
-    
+
+
+    document.getElementById('sekil-'+btnvalue.id.slice(1,2)).style.left='0%';
+    document.getElementById('sekil-'+btnvalue.id.slice(1,2)).style.top='0%';
    
-  
-    
-    
-    document.getElementById('sekil-'+btnvalue.id.slice(1,2)).style.width='100%';
     document.getElementById('description').innerHTML=document.getElementById('sekil-'+btnvalue.id.slice(1,2)).className;
     document.getElementById('p'+btnvalue.id.slice(1,2)).className='active';
 
