@@ -54,6 +54,9 @@ function openMenu(){
 
 
 }
+
+
+
 //  img effect function 
 // window.addEventListener('mousemove',(mouse)=>{
     

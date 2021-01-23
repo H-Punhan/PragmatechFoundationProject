@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapsiriq-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+
+        body{
+            background-color: #42A2CE;
+        }
+        #slider{
+            width:600px;
+            height:400px;
+            margin:auto auto;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border:3px solid white;
+            justify-content: center;
+            
+          
+            
+        }
+
+        #slider button{
+            display: none;
+            height:100%;
+            z-index: 2;
+            background: none;
+            border:none;
+            font-size: 30px;
+            outline: none;
+        }
+
+        #slider:hover  button{
+            display: block;
+        }
+
+        #left{
+            position: absolute;
+            left:5px;
+            padding:10px;
+        }
+        #right{
+            position: absolute;
+            right:5px;
+            padding:10px;
+        }
+        img{
+            width:0%;
+            height:0%;
+            transition: 0.9s;
+            height:100%;
+            position: absolute;
+            object-fit: cover;
+
+        }
+
+        #sekil-1{
+            width:100%;
+           
+           
+        }
+
+        #description{
+            width:100%;
+            height:60px;
+            background-color:rgba(0,0,0,.5);
+            color:white;
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-sizing: border-box;
+            padding:10px;
+
+        }
+
+        #slider-paging{
+            width:100px;
+           
+            height:30px;
+            margin:0px auto;
+            display: flex;
+            flex-direction:row ;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #slider-paging a{
+            display: block;
+            width:10px;
+            height:10px;
+       
+            border-radius: 100%;;
+        }
+        .active{
+            background-color: rgba(0,0,0,.9);
+        }
+        .nactive{
+            background-color: rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id='slider'>
+        <button id='left' class="button"><i class="fas fa-arrow-left"></i></button>
+        <button id='right' class='button'><i class="fas fa-arrow-right"></i></button>
+        
+        <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" id="sekil-1" class='Adventurer Cheesecake Brownie'>
+        <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" id='sekil-2' class="Adventurer Lemon">
+        <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg" id='sekil-3' class="Adventurer Donut">
+        <img src="http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg" id="sekil-4" class="Adventurer Caramel">
+       
+        <div id='description'>
+            Adventurer Cheesecake Brownie
+        </div>
+    </div>
+
+    <div id='slider-paging'>
+        <a href='#' id='p1' class="active"></a>
+        <a href='#' id='p2' class="nactive"></a>
+        <a href='#' id='p3' class="nactive"></a>
+        <a href='#' id='p4' class="nactive"></a>
+
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
