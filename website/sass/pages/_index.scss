@@ -22,6 +22,9 @@ body,html{
     display: flex;
     align-items: center;
     background-color: whitesmoke;
+    .changePage{
+        transition: 1s;
+    }
     
     
 }
@@ -46,18 +49,20 @@ body,html{
     
     img{
         border-radius: 100%;
-        border:2px solid $main-color-white;
+        border:3px solid $main-color-white;
     }
 
     #responsive-menu-2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         color:$main-color-white;
-        font-size:1.5vw;
+        font-size:18px;
+        overflow: auto;
         
         #responsive-menu-links{
-            height:60%;
+            
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -74,7 +79,7 @@ body,html{
         color:$main-color-white;
         width: 40%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         a{
             color:$main-color-white;
         }
@@ -214,7 +219,8 @@ body,html{
     display: flex;
     border-radius:30px;
     background-color: $main-color-blue;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: -0px 0px 11px rgba(0, 0,0,0.5);
+
     
     
     
@@ -231,6 +237,7 @@ body,html{
     background-color: $main-color-white;
     border-radius: 30px;
     border:none;
+    
     &:hover{
         ::-webkit-scrollbar-thumb{
             background: $main-color-grey; 
@@ -298,22 +305,30 @@ body,html{
 }
 
 #navbar a{
-    color:$main-color-black
+    
+    color:$main-color-black;
+
+    i:hover{
+        color:$main-color-blue;
+        
+        span{
+            right:58px;
+            
+            
+        }
+    }
+ 
+}
+
+#navbar-nav-icons{
+    
+        
+        #about{color:$main-color-blue;}
     
     
 }
 
-#navbar a:hover{
-    color:$main-color-blue;
-    
-    span{
-        right:58px;
-        
-        
-    }
-    
-    
-}
+
 
 
 
@@ -325,7 +340,9 @@ body,html{
     justify-content: space-evenly;
     border-radius: 30px;
     background-color: $main-color-white;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: -0px 0px 10px rgba(0, 0,0,0.5);
+    font-size:18px;
+
     
     
 }
@@ -342,6 +359,7 @@ body,html{
     text-align: center;
     
     
+    
 }
 
 #navbar-nav-arrows{
@@ -351,7 +369,9 @@ body,html{
     justify-content: space-evenly;
     align-items: center;
     background-color: $main-color-white;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: -0px 0px 10px rgba(0, 0,0,0.5);
+    font-size:18px;
+
     
 }
 
@@ -445,13 +465,13 @@ body,html{
         flex-direction: column;
         align-items: center;
         color:$main-color-white;
-        font-size:3vw;
+        font-size:20px;
         
         #responsive-menu-links{
-            height:60%;
+            
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+         
             align-items: center;
             a{
                 color:$main-color-white;
@@ -490,7 +510,7 @@ body,html{
         flex-direction: column;
         align-items: center;
         color:$main-color-white;
-        font-size:5vw;
+        font-size:15px;
     }
 
    

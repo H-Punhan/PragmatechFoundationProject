@@ -4,8 +4,10 @@
     overflow-y: auto;
     margin-left:5%;
     font-size:15px;
+    height:0%;
     img{
         max-width:100%;
+        
         height:auto;
         object-fit: cover;
     }
@@ -94,6 +96,8 @@
 
     @media(max-width:1200px){
         font-size:20px;
+
+      
         
     }
 
