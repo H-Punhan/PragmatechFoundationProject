@@ -311,12 +311,9 @@ body,html{
     i:hover{
         color:$main-color-blue;
         
-        span{
-            right:58px;
-            
-            
-        }
+        
     }
+    
  
 }
 
@@ -342,6 +339,11 @@ body,html{
     background-color: $main-color-white;
     box-shadow: -0px 0px 10px rgba(0, 0,0,0.5);
     font-size:18px;
+    a:hover{
+        span{
+            right:100%;
+        }
+    }
 
     
     

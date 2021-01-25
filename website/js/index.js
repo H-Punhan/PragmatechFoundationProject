@@ -15,7 +15,7 @@ let imgy=0;
 //  a links for page change
 let navbarIcon=document.querySelectorAll('#navbar-nav-icons a');
 let responsivemenuIcon=document.querySelectorAll('#responsive-menu-links a')
-let postIcon=document.querySelectorAll('#blog-div-posts a')
+let postIcon=document.querySelectorAll('#post')
 let changeArrrows=document.querySelectorAll("#navbar-nav-arrows a")
 // all page classes
 let changePagediv=document.querySelectorAll('.changePage')
@@ -38,15 +38,20 @@ for(let i=0;i<navbarIcon.length;i++){
     navbarIcon[i].addEventListener('click',()=>{
         changePage(navbarIcon[i].id)
     })
+
     responsivemenuIcon[i].addEventListener('click',()=>{
         changePage(responsivemenuIcon[i].id)
     })
+    
+
+}
+
+for(let i=0;i<postIcon.length;i++){
     postIcon[i].addEventListener('click',()=>{
         changePage(postIcon[i].id)
         
         
     })
-
 }
 
 for(let i=0;i<changeArrrows.length;i++){
@@ -62,7 +67,7 @@ for(let i=0;i<changeArrrows.length;i++){
 function openMenu(){
     
     
-   
+    
     if (isOpen==false){
 
         responsive_button.firstChild.className='fas fa-times';
@@ -96,33 +101,64 @@ function openMenu(){
 // change page 
 function changePage(navbarIcona){
     
-    
+        
+        if(navbarIcona!='post'){
 
-    for(let i=0;i<4;i++){
+            document.getElementById('navbar-nav-arrows0').style.display='block';
+        
+            for(let i=0;i<4;i++){
+                changePagediv[4].style.height='0%';
+                if(changePagediv[i].className==navbarIcona+" changePage"){
+                    
+                    changePagediv[i].style.height='100%';
+                    
+                    pageindex=i
 
-        if(changePagediv[i].className==navbarIcona+" changePage"){
-
-            changePagediv[i].style.height='100%';
+                    
+                        
+                        navbarIcon[i].style.color='#04B4E0';
+                    
+                    
+                    
+                
+                
+                    
+                }
+                else{
+                 changePagediv[i].style.height='0%';
+                
+                 navbarIcon[i].style.color='black';
+                
+                
+                 openMenu()
+                
             
-            pageindex=i
+                
 
-            navbarIcon[i].style.color='#04B4E0';
-           
+                
+
+                }
+
+            }
+
+
             
         }
         else{
-            changePagediv[i].style.height='0%';
-            navbarIcon[i].style.color='black';
-            openMenu()
-            
-          
-            
 
-            
+            document.getElementById('navbar-nav-arrows0').style.display='none';
+            for(let i=0;i<5;i++){
+                if(changePagediv[i].className==navbarIcona+" changePage"){
+                    changePagediv[i].style.height='100%';
+                }
+                else{
+                    changePagediv[i].style.height='0%';
+                }
+            }
 
         }
-
-    }
+    
+    
 }
 function changePage2(buttonvalue){
     
@@ -132,6 +168,8 @@ function changePage2(buttonvalue){
 
         
         changePagediv[pageindex].style.height='0%';
+   
+        
         
 
         pageindex++;
@@ -141,6 +179,7 @@ function changePage2(buttonvalue){
         }
 
         changePagediv[pageindex].style.height='100%';
+        
         
         
 

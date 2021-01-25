@@ -327,10 +327,6 @@ body .changePage, html .changePage {
   color: #04B4E0;
 }
 
-#navbar a i:hover span {
-  right: 58px;
-}
-
 #navbar-nav-icons #about {
   color: #04B4E0;
 }
@@ -355,6 +351,10 @@ body .changePage, html .changePage {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   font-size: 18px;
+}
+
+#navbar-nav-icons a:hover span {
+  right: 100%;
 }
 
 #navbar-nav-icons span {
