@@ -14,9 +14,11 @@
    
 }
 #slider img{
+    transition: all 1s ease;
 height:100%;
 position:relative;
 flex-shrink: 0;
 display: flex;
+
 
 }

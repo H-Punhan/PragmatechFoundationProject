@@ -1,0 +1,31 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+body{
+    background-color: #455A63;
+}
+#accordion{
+    width:50%;
+    margin-left:25%;
+    margin-top:10px;
+}
+
+.item .item-header{
+    background-color: teal;
+    color:white;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .item-body{
+    background-color: white;
+    
+    transition: 0.5s;
+    height:0px;
+    overflow: hidden;
+    
+}
