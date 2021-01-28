@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    outline: none;
+    font-family: tahoma;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    width:70%;
+    margin-left: 15%;
+    border:1px solid black;
+
+}
+
+#creator,#created{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#creator input{
+    padding: 5px;
+    border:1px solid lightgray;
+    border-radius: 5px;
+    
+}
+
+#creator select{
+    padding:5px;
+    border: 1px solid lightgray;
+}
+
+#createButton{
+    
+    padding:5px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border:none;
+    width:30%;
+    margin-left:70%;
+   
+}
+#createButton:hover{
+    
+    background:none;
+    border:1px solid lightgrey;
+}
+
+#creator-img{
+    height:300px;
+    width:100%;
+    border-radius: 5px;
+    border:1px solid lightgray;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url();
+}
+
+#creator-img-banner{
+
+    position: absolute;
+    bottom:0%;
+    text-shadow:1px 1px black;
+    text-align: center;
+    width:100%;
+    color:white;
+    padding:5px;
+    transition: 0.5s;
+    font-size:35px;
+    font-family: impact;
+    
+
+}
+
+#created{
+    padding-left: 10px;
+}
+
+#created-img{
+    height:300px;
+    width:100%;
+    border-radius: 5px;
+    border:1px solid lightgray;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    
+   
+}
