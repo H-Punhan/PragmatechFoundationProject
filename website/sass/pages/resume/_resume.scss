@@ -36,81 +36,28 @@
     
 }
 
+.skill-bar-bar{
+    width:100%;
+    padding:1px;
+    border:1px solid $main-color-blue;
+    border-radius: 10px;
+    .box{
+        background-color:$main-color-blue;
+        height:100%;
+        border-radius: 10px;
+        height:10px;
+        padding:2px;
+        
+        
+    }
+}
+
 #skill-bar-text p{
     
     color:$main-color-grey;
     font-size:12px;
     
 }
-
-
-.skill-bar-html{
-   
-    border:1px solid $main-color-blue;
-    border-radius: 10px;
-    height:7px;
-    padding:1px;
-    
-    
-}
-
-.skill-bar-html .box {
-    width:90%;
-    background-color: $main-color-blue;
-    height:100%;
-}
-
-
-.skill-bar-javascript{
-   
-    border:1px solid $main-color-blue;
-    border-radius: 10px;
-    height:7px;
-    padding:1px;
-    
-    
-}
-
-.skill-bar-javascript .box {
-    width:70%;
-    background-color: $main-color-blue;
-    height:100%;
-}
-
-
-.skill-bar-sql{
-   
-    border:1px solid $main-color-blue;
-    border-radius: 10px;
-    height:7px;
-    padding:1px;
-    
-    
-}
-
-.skill-bar-sql .box {
-    width:40%;
-    background-color: $main-color-blue;
-    height:100%;
-}
-
-.skill-bar-python{
-   
-    border:1px solid $main-color-blue;
-    border-radius: 10px;
-    height:7px;
-    padding:1px;
-    
-    
-}
-
-.skill-bar-python .box {
-    width:1%;
-    background-color: $main-color-blue;
-    height:100%;
-}
-
-
 
 
 

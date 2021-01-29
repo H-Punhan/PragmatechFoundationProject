@@ -23,7 +23,7 @@ body,html{
     align-items: center;
     background-color: whitesmoke;
     .changePage{
-        transition: 1s;
+        transition: 0.5s;
     }
     
     
@@ -50,6 +50,7 @@ body,html{
     img{
         border-radius: 100%;
         border:3px solid $main-color-white;
+        object-fit: cover;
     }
 
     #responsive-menu-2{
@@ -342,6 +343,7 @@ body,html{
     a:hover{
         span{
             right:100%;
+            opacity: 100%;
         }
     }
 
@@ -351,7 +353,7 @@ body,html{
 
 #navbar-nav-icons span{
 
-    right:-200px;
+    right:-100%;
     position: absolute;
     padding:2px;
     background-color: $main-color-blue;
@@ -359,6 +361,7 @@ body,html{
     transition: 0.5s;
     width:90px;
     text-align: center;
+    opacity: 0%;
     
     
     

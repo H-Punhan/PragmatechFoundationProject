@@ -5,20 +5,24 @@ let responsive_button=document.getElementById('responsive-menu-button');
 
 let responsive_menu=document.getElementById('responsive-menu');
 
-
-
-
 let img=document.getElementById('img')
+
 let imgx=0;
+
 let imgy=0;
 
 //  a links for page change
 let navbarIcon=document.querySelectorAll('#navbar-nav-icons a');
+
 let responsivemenuIcon=document.querySelectorAll('#responsive-menu-links a')
+
 let postIcon=document.querySelectorAll('#post')
+
 let changeArrrows=document.querySelectorAll("#navbar-nav-arrows a")
+
 // all page classes
 let changePagediv=document.querySelectorAll('.changePage')
+
 let pageindex=0
 
 
@@ -45,7 +49,7 @@ for(let i=0;i<navbarIcon.length;i++){
     
 
 }
-
+// ----------------------
 for(let i=0;i<postIcon.length;i++){
     postIcon[i].addEventListener('click',()=>{
         changePage(postIcon[i].id)
@@ -95,7 +99,7 @@ function openMenu(){
 
 
 }
-
+// -------------
 
 
 // change page 
@@ -160,6 +164,8 @@ function changePage(navbarIcona){
     
     
 }
+
+// change page with arrows
 function changePage2(buttonvalue){
     
     
