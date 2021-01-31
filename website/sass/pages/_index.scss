@@ -3,6 +3,7 @@
     padding:0px;
     box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
+     outline:none;
     
 }
 
@@ -22,6 +23,246 @@ body,html{
     align-items: center;
     justify-content: center;
     
+}
+
+#search-bar{
+    display: none;
+    
+    // width: 272px;
+    width:0px;
+   
+    height:100%;
+    background-color: #FCFCFC;
+    padding:0px;
+    
+    position: absolute;
+    right:0px;
+    z-index: 10;
+    #search-bar-open-button{
+        
+        top:30px;
+        width:50px;
+        height: 50px;
+        position: absolute;
+        right:100%;
+        font-size:20px;
+        padding:5px;
+        background-color: #FCFCFC;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-left:2px solid lightgrey;
+        border-top:2px solid lightgrey;
+        border-bottom:2px solid  lightgrey;
+        border-right:none;
+        
+
+        @media(max-width:1200px){
+            &{
+                top:100px;
+            }
+
+        }
+    }
+    
+
+    #search-bar-inner-search-bar{
+        overflow:hidden;
+        background-color: #FFFFFF;
+     
+        padding:0px 10px;
+
+        
+
+        input{
+            padding:10px;
+            width:80%;
+            border-top-left-radius:7px;
+            border-bottom-left-radius:7px;
+            border:2px solid lightgrey;
+            border-right: none;
+            
+            
+
+        }
+        button{
+            border-top-right-radius:7px;
+            border-bottom-right-radius:7px;
+            padding:10px;
+            width:20%;
+            background:none;
+            border:2px solid lightgrey;
+            border-left:none;
+            
+            
+        }
+    }
+
+    #recent-post{
+        overflow:hidden;
+        
+        padding:10px;
+        background-color: #FFFFFF;
+
+        #inner-recent-post{
+            height:350px;
+            
+            
+            &::-webkit-scrollbar {
+                display: none;
+              }
+              
+              /* Hide scrollbar for IE, Edge and Firefox */
+               &{
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+              }
+            width:100%;
+            border:2px solid lightgrey;
+            border-radius: 7px;
+            padding: 10px;
+            h4{
+                color:$main-color-black;
+            }
+            ul{
+                li{
+                   list-style-type: circle;
+                   font-size:15px;
+                   color:$main-color-grey;
+                   &::marker {
+                    color:$main-color-blue;
+                   }
+                   margin-left:20px;
+
+                }
+            }
+            
+
+
+        }
+
+        
+        
+        
+        
+    }
+
+
+    #recent-comment{
+        overflow:hidden;
+        padding:10px;
+        background-color: #FFFFFF;
+
+        #inner-recent-comment{
+            width:100%;
+            border:2px solid lightgrey;
+            border-radius: 7px;
+            padding: 10px;
+            h4{color:$main-color-black;}
+
+            ul{
+
+                
+                li{
+                   list-style-type: circle;
+                   font-size:15px;
+                   color:$main-color-grey;
+                   &::marker {
+                    color:$main-color-blue;
+                    border:2px solid $main-color-blue;
+                   }
+                   margin-left:20px;
+
+                }
+            }
+
+
+        }
+        
+        
+        
+    }
+    
+    
+}
+
+#responsive-menu-button{
+    display: none;
+    position: absolute;
+    right:10px;
+    top:10px;
+    padding:10px;
+    width:50px;
+    height:50px;
+    border:none;
+    background-color: $main-color-blue;
+    color:$main-color-white;
+    border-radius: 50%;
+    z-index: 16;
+    font-size:20px;
+
+    @media(max-width: 1200px){
+        display: block;
+    }
+}
+
+#responsive-menu{
+    overflow: hidden;
+    position: absolute;
+    right:0px;
+    height:100%;
+    width:0px;
+    background-color:$main-color-blue;
+    z-index:15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #inner-responsive-menu{
+        width:80%;
+        height:90%;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        
+        img{
+            height:150px;
+            width:150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border:2px solid $main-color-white;
+
+        }
+
+        #text {
+            text-align: center;
+            color: $main-color-white;
+
+
+        }
+
+        #nav-menu{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            a{
+                color:$main-color-white;
+                text-decoration: none;
+            }
+        }
+
+        #social{
+            
+            width:50%;
+            display: flex;
+            font: 1em sans-serif;
+            align-self: center;
+            justify-content: space-evenly;
+            a{
+                color:$main-color-white;
+            }
+        }
+
+    }
 }
 
 #container{
@@ -48,28 +289,7 @@ body,html{
             }
 
         }
-                /* width */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
         
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background:none;
-          
-        }
-        
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: none;
-            border-radius: 20px;
-            
-        }
-        
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: $main-color-blue;
-        }
 
 
         #inner-container-profile{
@@ -132,21 +352,11 @@ body,html{
             height:100%;
             border-radius: 30px;
             background-color: $main-color-white;
-            display: flex;
-            // align-items: center;
-            justify-content: center;
             overflow-y:scroll;
+            
            
           
-            #inner-container-inner-container{
-                width:85.61%; 
-                
-                height:auto;
-                margin-top:30px;
-                
-                
-                
-            }
+
 
             
         }
@@ -198,7 +408,7 @@ body,html{
         
 
         a{
-            color:$main-color-black;
+            color:#BBBBBC;
         
             font-size:20px;
             display: block;
@@ -238,12 +448,12 @@ body,html{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        font-size:20px;
+        
 
         a{
-            color:$main-color-black;
+            color:#BBBBBC;
             text-decoration: none;
-            font-size:20px;
+            font-size:25px;
             display: block;
             span{
              display:none;

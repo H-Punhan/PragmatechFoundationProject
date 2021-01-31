@@ -1,6 +1,10 @@
+
 #about-div{
-    width:100%;
+
+    width:85.61%; 
     font-size:19px;
+    
+    margin:10px auto;
 
 
     #about-div-row{
@@ -76,6 +80,7 @@
                 margin-top:10px;
                 font-size: 15px;
                 word-spacing: 2px;
+                color: $main-color-grey;
             }
         }
 
