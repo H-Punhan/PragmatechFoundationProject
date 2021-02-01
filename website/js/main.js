@@ -23,6 +23,8 @@ menuButton.addEventListener('click',()=>{
 
 })
 
+
+
 // Functions
 
 function openSearcbar(){
