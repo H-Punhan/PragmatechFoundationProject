@@ -1,0 +1,102 @@
+#resume-div{
+    width:85.61%; 
+    font-size:19px;
+    
+    margin:30px auto;
+    color:$main-color-black;
+   
+
+    &:first-child{
+        padding-top:30px;
+    }
+
+    #resume-div-row{
+    
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        #resume-div-row-part-1{
+            width:54.67%;
+            &:first-child{
+             
+                display: flex;
+                flex-direction: column;
+               
+                
+            }
+            
+           
+        }
+        #resume-div-row-part-2{
+            width:37.75%;
+            #fchild{
+                display: flex;
+                flex-direction: column;
+                
+                justify-content: center;
+                
+            }
+            #skills-div{
+                width:100%;
+                margin-top: 10px;
+
+                #skill-bar{
+                    width:100%;
+                    padding:10px 0px;
+                    
+
+                    #skill-bar-text{
+                        font-size: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                    #skill-bar-bar{
+                        width:100%;
+                        padding:2px ;
+                        border:1px solid $main-color-blue;
+                        border-radius: 10px;
+
+                        #inner-skill-bar-bar{
+                            padding:2px;
+                            height:100%;
+                            width:100%;
+                            border-radius: 10px;
+                            background-color: $main-color-blue;
+
+                        }
+                    }
+                }
+
+            }
+
+            #knowledges-div{
+                width:100%;
+                margin-top: 10px;
+
+                #knowledge-row{
+                    margin-top:10px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                #knowledge-item{
+                    padding:5px 10px;
+                    color:$main-color-white;
+                    background-color: $main-color-blue;
+                    border-radius: 10%;
+                    display: inline-block;
+                    font-size:13px;
+                    margin-top: 5px;
+                }
+            }
+           
+            
+        }
+        
+    }
+}

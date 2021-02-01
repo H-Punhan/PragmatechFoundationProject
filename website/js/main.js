@@ -1,223 +1,82 @@
-// variables
+// Variables
+
 let isOpen=false;
-
-let responsive_button=document.getElementById('responsive-menu-button');
-
-let responsive_menu=document.getElementById('responsive-menu');
-
-let img=document.getElementById('img')
-
-let imgx=0;
-
-let imgy=0;
-
-//  a links for page change
-let navbarIcon=document.querySelectorAll('#navbar-nav-icons a');
-
-let responsivemenuIcon=document.querySelectorAll('#responsive-menu-links a')
-
-let postIcon=document.querySelectorAll('#post')
-
-let changeArrrows=document.querySelectorAll("#navbar-nav-arrows a")
-
-// all page classes
-let changePagediv=document.querySelectorAll('.changePage')
-
-let pageindex=0
+let isOpenMenu=false;
+let firstSearchbar=document.getElementById('search-bar')
+let secondSearchbar=document.getElementById('search-bar-2')
+let searchBarbutton=document.getElementById('search-bar-open-button')
+let menuButton=document.getElementById('responsive-menu-button')
+let responsiveMenu=document.getElementById('responsive-menu')
 
 
+// Adding Events 
 
+searchBarbutton.addEventListener('click',()=>{
 
-
-// add event to button
-
-responsive_button.addEventListener('click',()=>{
-
-    openMenu();
+    openSearcbar()
 
 })
 
-for(let i=0;i<navbarIcon.length;i++){
+menuButton.addEventListener('click',()=>{
 
-    navbarIcon[i].addEventListener('click',()=>{
-        changePage(navbarIcon[i].id)
-    })
+    openMenu()
 
-    responsivemenuIcon[i].addEventListener('click',()=>{
-        changePage(responsivemenuIcon[i].id)
-    })
-    
+})
 
-}
-// ----------------------
-for(let i=0;i<postIcon.length;i++){
-    postIcon[i].addEventListener('click',()=>{
-        changePage(postIcon[i].id)
+// Functions
+
+function openSearcbar(){
+    if(isOpen==false){
+
         
-        
-    })
-}
-
-for(let i=0;i<changeArrrows.length;i++){
-
-    changeArrrows[i].addEventListener('click',()=>{
-        changePage2(changeArrrows[i])
-    })
-
-}
-
-// functions
-// responsive menu function
-function openMenu(){
-    
-    
-    
-    if (isOpen==false){
-
-        responsive_button.firstChild.className='fas fa-times';
-        
-        if(window.innerWidth>360 ){
-            responsive_menu.style.width='360px';
-        }
-
-        if(window.innerWidth<=360 ){
-            responsive_menu.style.width='100%';
-        }
-
-
-        isOpen=true;
-    }
-    else{
-
-        responsive_button.firstChild.className='fas fa-bars';
-
-        responsive_menu.style.width='0%';
-
-        isOpen=false;
-
-    }
-
-
-}
-// -------------
-
-
-// change page 
-function changePage(navbarIcona){
-    
-        
-        if(navbarIcona!='post'){
-
-            document.getElementById('navbar-nav-arrows0').style.display='block';
-        
-            for(let i=0;i<4;i++){
-                changePagediv[4].style.height='0%';
-                if(changePagediv[i].className==navbarIcona+" changePage"){
-                    
-                    changePagediv[i].style.height='100%';
-                    
-                    pageindex=i
-
-                    
-                        
-                        navbarIcon[i].style.color='#04B4E0';
-                    
-                    
-                    
-                
-                
-                    
-                }
-                else{
-                 changePagediv[i].style.height='0%';
-                
-                 navbarIcon[i].style.color='black';
-                
-                
-                 openMenu()
-                
-            
-                
-
-                
-
-                }
-
-            }
-
-
-            
+        secondSearchbar.style.width='90%';
+        if(window.innerWidth<=360){
+            firstSearchbar.style.width=(window.innerWidth-searchBarbutton.clientWidth)+'px';
         }
         else{
-
-            document.getElementById('navbar-nav-arrows0').style.display='none';
-            for(let i=0;i<5;i++){
-                if(changePagediv[i].className==navbarIcona+" changePage"){
-                    changePagediv[i].style.height='100%';
-                }
-                else{
-                    changePagediv[i].style.height='0%';
-                }
-            }
-
+            firstSearchbar.style.width='311px';
         }
-    
-    
-}
-
-// change page with arrows
-function changePage2(buttonvalue){
-    
-    
-    
-    if(buttonvalue.id=='navbar-arrow-right'){
-
-        
-        changePagediv[pageindex].style.height='0%';
-   
         
         
-
-        pageindex++;
-
-        if(pageindex>3){
-            pageindex=0;
-        }
-
-        changePagediv[pageindex].style.height='100%';
-        
-        
-        
-
+        isOpen=true
+        searchBarbutton.firstElementChild.className='fas fa-times'
     }
-        
-
     else{
 
-        changePagediv[pageindex].style.height='0%';
+        secondSearchbar.style.width='0%';
+        firstSearchbar.style.width='0';
+        searchBarbutton.firstElementChild.className='fas fa-bars';
+        
+        isOpen=false
+    }
+    
 
-        pageindex--;
+}
 
-        if(pageindex<0){
-            pageindex=3;
+function openMenu(){
+    
+    if(isOpenMenu==false){
+
+        
+        
+        if(window.innerWidth<=360){
+            responsiveMenu.style.width='100%';
         }
-
-        changePagediv[pageindex].style.height='100%';
-
+        else{
+            responsiveMenu.style.width='360px';
+        }
+        
+        
+        isOpenMenu=true
+        menuButton.firstElementChild.className='fas fa-times'
     }
+    else{
 
-    for(let i=0;i<navbarIcon.length;i++){
-
-       if(navbarIcon[i] ==navbarIcon[pageindex]){
-            navbarIcon[i].style.color="#04B4E0";
-       }
-       else{
-            navbarIcon[i].style.color="black";
-       }
-       
-
+        
+        responsiveMenu.style.width='0';
+        menuButton.firstElementChild.className='fas fa-bars';
+        
+        isOpenMenu=false
     }
-
-
 
 }
