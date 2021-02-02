@@ -33,7 +33,7 @@ body, html {
   height: 100%;
   position: absolute;
   right: 0px;
-  z-index: 2;
+  z-index: 97;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +223,7 @@ body, html {
   background-color: #04B4E0;
   color: white;
   border-radius: 50%;
-  z-index: 16;
+  z-index: 99;
   font-size: 20px;
 }
 
@@ -242,7 +242,7 @@ body, html {
   height: 100%;
   width: 0px;
   background-color: #04B4E0;
-  z-index: 15;
+  z-index: 98;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -334,6 +334,7 @@ body, html {
   text-decoration: none;
   display: none;
   font-size: 20px;
+  z-index: 96;
 }
 
 @media (max-width: 1200px) {
@@ -343,6 +344,7 @@ body, html {
 }
 
 #mobile-navbar-arrow {
+  z-index: 5;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -911,5 +913,324 @@ body, html {
   background-color: #04B4E0;
   color: white;
   font-size: 15px;
+}
+
+#blog-div {
+  width: 85.61%;
+  font-size: 19px;
+  margin: 60px auto;
+  color: #222222;
+}
+
+#blog-div h1:first-child {
+  font-weight: 600;
+}
+
+#blog-div #blog-div-row {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#blog-div #blog-div-row #blog-item {
+  width: 48%;
+  height: 269px;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 57.25%;
+  position: relative;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border i {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  z-index: 4;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border #tag {
+  position: absolute;
+  z-index: 4;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #222222;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border #blog-item-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: none;
+  z-index: 2;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border:hover #blog-item-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-img-border:hover i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 100;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-text {
+  width: 100%;
+  height: 33.09%;
+  padding: 10px 0px;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-text p {
+  color: grey;
+  font-size: 12px;
+}
+
+#blog-div #blog-div-row #blog-item #blog-item-text h4 {
+  color: #222222;
+  font-size: 20px;
+}
+
+@media (max-width: 756px) {
+  #blog-div #blog-div-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #blog-div #blog-div-row #blog-item {
+    width: 100%;
+  }
+}
+
+#blog-div #see-all-post {
+  padding: 5px 10px;
+  background-color: white;
+  color: #222222;
+  border: 2px solid #04B4E0;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+#blog-div #see-all-post:hover {
+  background-color: #04B4E0;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact-div {
+  width: 85.61%;
+  font-size: 19px;
+  margin: 60px auto;
+  color: #222222;
+}
+
+#contact-div #contact-div-row {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 601px;
+}
+
+#contact-div #contact-div-row #part-1 {
+  width: 34.02%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-div #contact-div-row #part-1 #part {
+  height: 18.76%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FCFCFC;
+  border: 2px solid #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-div #contact-div-row #part-1 #part i {
+  font-size: 35px;
+  color: #04B4E0;
+}
+
+#contact-div #contact-div-row #part-1 #part h5 {
+  font-weight: bold;
+  color: #222222;
+}
+
+#contact-div #contact-div-row #part-2 {
+  width: 67.65%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+#contact-div #contact-div-row #part-2 #gps {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  background-image: url("https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i2684280&2i6484604&2e1&3u16&4m2&1u496&2u140&5m5&1e0&5sen-US&6sus&10b1&12b1&client=google-maps-embed&token=56411");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-div #contact-div-row #part-2 #row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#contact-div #contact-div-row #part-2 #row #part {
+  width: 50%;
+  height: 30px;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-div #contact-div-row #part-2 #row #part input {
+  padding: 5px;
+  width: 90%;
+  border: 2px solid #BFBFBF;
+  border-radius: 5px;
+}
+
+#contact-div #contact-div-row #part-2 #row #part textarea {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border: 2px solid #BFBFBF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#contact-div #contact-div-row #part-2 #send-button {
+  margin-top: 30px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #222222;
+  border: 2px solid #04B4E0;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+#contact-div #contact-div-row #part-2 #send-button:hover {
+  background-color: #04B4E0;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  #contact-div #contact-div-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #contact-div #contact-div-row #part-1, #contact-div #contact-div-row #part-2 {
+    width: 100%;
+    padding: 0px;
+    height: 601px;
+    margin-top: 20px;
+  }
+  #contact-div #contact-div-row #part-1 #part, #contact-div #contact-div-row #part-2 #part {
+    height: 200px;
+  }
+}
+
+@media (max-width: 756px) {
+  #contact-div #contact-div-row #part-2 {
+    height: 700px;
+  }
+  #contact-div #contact-div-row #part-2 #row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-div #contact-div-row #part-2 #row #part {
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contact-div #contact-div-row #part-2 #row #part input {
+    width: 100%;
+    padding: 10px 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

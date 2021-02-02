@@ -27,6 +27,7 @@ menuButton.addEventListener('click',()=>{
 
 // Functions
 
+// Function for Sesarchbar
 function openSearcbar(){
     if(isOpen==false){
 
@@ -55,6 +56,8 @@ function openSearcbar(){
 
 }
 
+
+// Function for mobile menu
 function openMenu(){
     
     if(isOpenMenu==false){

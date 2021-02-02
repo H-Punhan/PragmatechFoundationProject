@@ -1,25 +1,17 @@
+// Everything 
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
      outline:none;
-     
-    
 }
 
+// All buttons
 button{
     cursor: pointer;
 }
 
-// container width 1311px
-// container height 525px;
-
-// navbar height 525px
-// navbar width 82px
-
-
-// inner-container width 1214px
 body,html{
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(237, 243, 247)), to(rgb(237, 243, 247)));
     width:100%;
@@ -30,6 +22,7 @@ body,html{
     
 }
 
+// Search bar 
 #search-bar{
 
     transition: 0.5s;
@@ -38,7 +31,7 @@ body,html{
     position: absolute;
     right:0px;
     
-    z-index:2;
+    z-index:97;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -190,6 +183,7 @@ body,html{
 }
 
 
+// Mobile menu button
 #responsive-menu-button{
     display: none;
     position: absolute;
@@ -202,7 +196,7 @@ body,html{
     background-color: $main-color-blue;
     color:$main-color-white;
     border-radius: 50%;
-    z-index: 16;
+    z-index: 99;
     font-size:20px;
 
     @media(max-width: 1200px){
@@ -210,6 +204,8 @@ body,html{
     }
 }
 
+
+//  Mobile menu
 #responsive-menu{
     transition: 0.5s;
     overflow: hidden;
@@ -218,7 +214,7 @@ body,html{
     height:100%;
     width:0px;
     background-color:$main-color-blue;
-    z-index:15;
+    z-index:98;
     display: none;
     align-items: center;
     justify-content: center;
@@ -278,6 +274,7 @@ body,html{
     }
 }
 
+// Mobile header
 #mobile-header{
     background-color: rgba( white, 7.5);
     padding:10px;
@@ -289,13 +286,17 @@ body,html{
     text-decoration: none;
     display: none;
     font-size:20px;
+    z-index:96;
 
     @media(max-width:1200px){
         display: block;
     }
 }
 
+
+// Mobile navigation arrow
 #mobile-navbar-arrow{
+    z-index:5;
     display:none;
     flex-direction: column;
         align-items:center;
@@ -319,6 +320,8 @@ body,html{
         
     }
 }
+
+
 #container{
     
     
