@@ -48,7 +48,7 @@ function openSearcbar(){
 
         secondSearchbar.style.width='0%';
         firstSearchbar.style.width='0';
-        searchBarbutton.firstElementChild.className='fas fa-bars';
+        searchBarbutton.firstElementChild.className='fas fa-list';
         
         isOpen=false
     }

@@ -1,0 +1,125 @@
+#post-div{
+    width:85.61%; 
+    font-size:19px;
+    
+    margin:80px auto;
+    color:$main-color-black;
+   
+
+   
+    #inner-post{
+        width:90%;
+        margin:30px auto; 
+       
+        p{
+            font-size: 15px;
+            color:grey;
+            word-spacing: 5px;
+        }
+
+        #inner-post-tag{
+            color:$main-color-black;
+            text-decoration: none;
+            font-size:12px;
+            
+            &:hover{
+                color:$main-color-blue;
+                
+            }
+        }
+
+        #about-post{
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px 10px;
+            border-radius: 7px;
+            border:2px solid #E5E5E5;
+
+            div{
+                display: flex;
+                width:30%;
+                justify-content: space-between;
+                align-items:center;
+                i{
+                    font-size: 15px;
+                    color:grey;
+                }
+
+                @media(max-width:700px){
+                    font-size: 10px;
+                }
+            }
+        }
+
+        #prev{
+            text-decoration: none;
+            color:black;
+            font-size:15px;
+            color:grey;
+            &:hover{
+                color:$main-color-blue;
+            }
+        }
+
+        #comment{
+            width: 100%;
+            input,textarea{
+                padding:10px;
+                border:2px solid  #E5E5E5;
+                border-radius: 7px;
+                width:100%;
+                &:focus{
+                    transition: 0.5s;
+                    border:2px solid $main-color-blue;
+                }
+            }
+            #checkbox{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                input{
+                   
+                    
+                    width:auto;
+                }
+                
+                
+                
+                
+                
+            }
+
+            #send-button{
+                padding:10px 20px;
+                background-color: $main-color-white;
+                color:$main-color-black;
+                border:2px solid $main-color-blue;
+                border-radius: 25px;
+                font-size: 15px;
+                &:hover{
+                    transition: 0.5s;
+                    background-color: $main-color-blue;
+                    color:$main-color-white;
+                }
+            }
+        }
+    }
+    #sekil{
+        width:100%;
+        max-width: 100%;
+        height:auto;
+
+        object-fit: cover;
+
+
+        @media(max-width:1200px){
+          width:90%;
+          margin-left:5%;
+        }
+
+        
+    }
+}
