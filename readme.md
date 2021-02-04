@@ -8,6 +8,7 @@ Qurduğum bu layihə portfolio vebsaytıdır.Layihənin əsas məqsədi potensia
 
 * About
 * Resume
+* Portfolio
 * Blog
 * Contact
 
