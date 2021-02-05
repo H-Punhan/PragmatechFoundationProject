@@ -106,6 +106,61 @@
                 }
             }
         }
+
+        #user-comment{
+            #row{
+
+                width:100%;
+                display:flex;
+                #img-part{
+
+                    width:10%;
+                    text-align: center;
+                    img{
+                        border-radius: 50%;
+                    }
+                   
+
+                    
+                    @media(max-width:756px){
+                        width:20%;
+                     }
+                    
+                }
+                #text-part{
+                   
+
+                    width:90%;
+                    font-size: 15px;
+                   
+                    color:grey;
+                    #row{
+                        width:50%;
+                        height:fit-content;
+                        display: flex;
+                        
+                        flex-direction: row;
+                        justify-content: space-between;
+                        height:30px;
+                       
+                        
+                    }
+
+
+                    @media(max-width:756px){
+                       width:80%;
+
+                       #row{
+                           width:100%;
+                       }
+                    }
+               
+                }
+                
+
+
+            }
+        }
     }
     #sekil{
         width:100%;

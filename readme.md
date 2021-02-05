@@ -4,7 +4,7 @@
 
 ### Layihə haqqında məlumat
 
-Qurduğum bu layihə portfolio vebsaytıdır.Layihənin əsas məqsədi potensial müştərilər üçün işləmək istəyəcəyi proqramçının əl işləri və onun haqqında məlumat verməsidir.Saytda 4 əsas hissə mövcuddur.
+Qurduğum bu layihə portfolio vebsaytıdır.Layihənin əsas məqsədi potensial müştərilər üçün işləmək istəyəcəyi proqramçının əl işləri və onun haqqında məlumat verməsidir.Saytda 5 əsas hissə mövcuddur.
 
 * About
 * Resume

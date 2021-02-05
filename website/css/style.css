@@ -115,6 +115,7 @@ body, html {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   background-color: #FFFFFF;
+  color: #D5D6D7;
 }
 
 @media (max-width: 1200px) {
@@ -1496,6 +1497,61 @@ body, html {
   transition: 0.5s;
   background-color: #04B4E0;
   color: white;
+}
+
+#post-div #inner-post #user-comment #row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#post-div #inner-post #user-comment #row #img-part {
+  width: 10%;
+  text-align: center;
+}
+
+#post-div #inner-post #user-comment #row #img-part img {
+  border-radius: 50%;
+}
+
+@media (max-width: 756px) {
+  #post-div #inner-post #user-comment #row #img-part {
+    width: 20%;
+  }
+}
+
+#post-div #inner-post #user-comment #row #text-part {
+  width: 90%;
+  font-size: 15px;
+  color: grey;
+}
+
+#post-div #inner-post #user-comment #row #text-part #row {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+@media (max-width: 756px) {
+  #post-div #inner-post #user-comment #row #text-part {
+    width: 80%;
+  }
+  #post-div #inner-post #user-comment #row #text-part #row {
+    width: 100%;
+  }
 }
 
 #post-div #sekil {
