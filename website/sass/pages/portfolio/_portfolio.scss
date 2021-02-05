@@ -17,7 +17,7 @@
             border-radius: 10px;;   
            
             overflow: hidden;
-
+            cursor: pointer;
             #img-div{
                 height:80%;
                 width:100%;
@@ -99,7 +99,9 @@
     #inner-lightbox{
     position: relative;
     width:80.69%;
-    margin:50px auto;
+    margin:20px auto;
+ 
+    
 
     #closer-button{
         position: absolute;
@@ -109,10 +111,11 @@
         background-color: #FAFAFA;
         padding:10px;
         font-size:20px;
+        color:grey;
     }
 
     h1{
-        margin:60px 0px;
+        margin:20px 0px;
 
     }
     
@@ -124,18 +127,22 @@
         
         
         
+        
 
         #part1{
+            
             height: auto;
             width:64.49%;
+
             
             p{
                 word-spacing: 3px;
-                color:grey
+                color:grey;
+                margin:10px 0px;
             }
 
             #slider{
-                margin-top:10px;
+                margin-bottom:10px;
                 width:100%;
                 height:400px;
             display: flex;
@@ -146,6 +153,7 @@
 
             @media(max-width:1200px){
                 height:350px;
+                margin-top:20px;
             }
             @media(max-width:756px){
                 height:250px;
@@ -161,13 +169,26 @@
                 font-size:30px;
                 transition: 0.5s;
 
+                @media(max-width:756px){
+                    font-size:15px;
+
+
+                }
+                
+
                 
             }
             .f{
             left:-50px;
+            @media(max-width:756px){
+                left:0px;
+            }
             }
             .s{
                 right:-50px;
+                @media(max-width:756px){
+                    right:0px;
+                }
             }
 
             &:hover{
@@ -262,6 +283,27 @@
                 
 
             }
+
+            #share-row{
+                width:100%;
+                display: flex;
+                flex-direction: row;
+                
+                a,i{
+                   
+                    color:grey;
+                    &:hover{
+                        color:$main-color-blue;
+                    }
+
+                }
+                a{   
+                    font-size:16px;
+                    margin-left:10px;
+                    
+                }
+                
+            }
           
             
         }
@@ -276,7 +318,7 @@
             flex-direction: column;
             #part1,#part2{
                 width:100%;
-                margin-top:20px;
+                margin-bottom:20px;
             }
         }
     }
