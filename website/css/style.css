@@ -486,23 +486,28 @@ body, html {
 }
 
 #container #inner-container #inner-container-container::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
   /* width of the entire scrollbar */
 }
 
 #container #inner-container #inner-container-container::-webkit-scrollbar-track {
   background: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 100px;
   /* color of the tracking area */
 }
 
 #container #inner-container #inner-container-container::-webkit-scrollbar-thumb {
   height: 10px;
-  background: none;
+  background: grey;
   /* color of the scroll thumb */
   border-radius: 30px;
-  /* roundness of the scroll thumb */
   border: none;
-  /* creates padding around scroll thumb */
+}
+
+#container #inner-container #inner-container-container::-webkit-scrollbar-thumb:hover {
+  background-color: #04B4E0;
 }
 
 @media (max-width: 1200px) {
@@ -693,6 +698,7 @@ body, html {
 #about-div #about-div-row #about-div-row-img #img {
   height: 230px;
   width: 230px;
+  background-position: left;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbkzjG9fJ5xhklhWMgHgOJfNkBnQtF0bOwA&usqp=CAU");
   background-size: cover;
   background-repeat: no-repeat;
