@@ -11,9 +11,9 @@ function changePos(m){
     if(m.clientX>window.innerWidth/2){
 
        
-        xpos-=1;
-        if(xpos<-50){
-            xpos=-50;
+        xpos-=0.5;
+        if(xpos<-5){
+            xpos=-5;
 
         }
         
@@ -24,9 +24,9 @@ function changePos(m){
 
     else{
 
-        xpos+=1;
-        if(xpos>10){
-            xpos=9;
+        xpos+=0.5;
+        if(xpos>5){
+            xpos=5;
 
         }
         

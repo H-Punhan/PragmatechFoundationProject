@@ -35,13 +35,15 @@
             #img{
                 height:230px;
                 width:230px;
-                background-position: left;
+                background-position-x: right;
                 background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbkzjG9fJ5xhklhWMgHgOJfNkBnQtF0bOwA&usqp=CAU');
-                background-size: cover;
+                background-size:cover;
+                
                 background-repeat: no-repeat;
                 border-radius: 50%;
                 box-shadow: 0px 0px 10px $main-color-black;
                 border:15px solid white;
+               
                 
             }
         }
