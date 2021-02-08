@@ -13,7 +13,7 @@
         display: flex;
         margin-top: 120px;
         align-items: center;
-        @media(max-width:1200px){
+        @media(max-width:756px){
             flex-direction: column;
         }
         #about-div-row-img{
@@ -25,7 +25,7 @@
             align-items: center;
             
 
-            @media(max-width:1200px){
+            @media(max-width:756px){
                 width:100%;
                 
                 img{
@@ -64,7 +64,7 @@
             p:first-child{
                 color:grey;
             }
-            @media(max-width:1200px){
+            @media(max-width:756px){
                 width:100%;
                 padding:0px;
                 p:first-child{

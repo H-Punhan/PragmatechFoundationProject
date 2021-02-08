@@ -662,7 +662,7 @@ body, html {
           align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 756px) {
   #about-div #about-div-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -686,7 +686,7 @@ body, html {
           align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 756px) {
   #about-div #about-div-row #about-div-row-img {
     width: 100%;
   }
@@ -728,7 +728,7 @@ body, html {
   color: grey;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 756px) {
   #about-div #about-div-row #about-div-row-text {
     width: 100%;
     padding: 0px;
