@@ -40,7 +40,7 @@ function changePos(m){
             ypos=-5;
 
         }
-        console.log(ypos)
+       
     
     }
 
