@@ -12,8 +12,8 @@ function changePos(m){
 
        
         xpos-=0.5;
-        if(xpos<-5){
-            xpos=-5;
+        if(xpos<-10){
+            xpos=-10;
 
         }
         
@@ -25,8 +25,8 @@ function changePos(m){
     else{
 
         xpos+=0.5;
-        if(xpos>5){
-            xpos=5;
+        if(xpos>10){
+            xpos=10;
 
         }
         
@@ -36,8 +36,8 @@ function changePos(m){
     // background y position 
     if(m.clientY>window.innerHeight/2){
         ypos-=1;
-        if(ypos<-5){
-            ypos=-5;
+        if(ypos<-10){
+            ypos=-10;
 
         }
        
@@ -47,8 +47,8 @@ function changePos(m){
     else{
 
         ypos+=1;
-        if(ypos>5){
-            ypos=5;
+        if(ypos>10){
+            ypos=10;
 
         }
         
