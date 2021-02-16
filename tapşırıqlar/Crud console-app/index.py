@@ -1,5 +1,6 @@
 
 id=0
+
 class Users:
     def __init__(self,ad,soyad,id):
         self.ad=ad,
@@ -9,9 +10,6 @@ class Users:
 
         print(f"{self.id}| {self.ad} | {self.soyad}")
         
-
-
-
 users=[]
 
 commandList=[
