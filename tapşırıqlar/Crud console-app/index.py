@@ -27,7 +27,7 @@ def showCommand():
     
     choice(x)
 
-
+#choices
 def choice(x):
     if x=='1':
         addUser()
