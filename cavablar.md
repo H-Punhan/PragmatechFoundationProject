@@ -56,7 +56,7 @@
  
  ### bir class-da nece eded construktor olabiler
 
-  * İstənilən sayda contructor ola bilər
+  * Constructor 1 dene  ola biler 
  
  ### constructor ve metod arasindaki ferqler nelerdir
 
