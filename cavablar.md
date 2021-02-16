@@ -2,7 +2,26 @@
 
  ###  index->value ile key->value yanasmalari arasindaki ferqler
 
-    
+  * BIldiyimiz kimi arraylerin elementlerini gormek ucun onlari index deyerleri
+   ile cagiririq.Obyektlerde de ise deyerleri gormek ucun key-i cagirmaliyiq
+   `
+     a=[1,2,3] 
+     a[0] 
+     o={
+   name:'p'
+   age:19
+   }
+   a.name-2
+   `
+   
+    a[0]-burada arrayin index deyeri ile cagirilib
+   
+   
+    o.name-burada obyektin key deyerini cagiririq
+   
+   
+   
+   
 
  ### listin built-in metodlari nelerdir:
 
