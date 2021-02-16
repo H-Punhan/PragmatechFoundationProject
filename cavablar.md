@@ -42,12 +42,16 @@
 
  * Hazır metod istifadə etmədən öncə metodun nə olduğunu bilməliyik
    Metod proqramda istifadə olunmaq və kodun təkrar olunmaması üçün yazılmış  kod parçasıdır.Metodları normal function-lardan fəqrli olaraq bir class-a bağlı olur və bağlı olduğu classın icindeki məlumatlarla birlikdə işləyə bilər
+   
+ * metodun syntax-nı bilməliyik
+ 
+ * istifade qaydasını bilməliyik
   
   
  
  ### class construktor nedir? class ucun ne ehemiyyet dasiyir?
 
-  * constructor bir classdan obyekt yaradmağa kömək edən metoddur.Əyər  constructor olmasa bir classdan defelerle yeni bir obyekt yarada bilmərik.Yəni sadəcə bir obyekt yarada bilərik
+  * constructor bir classdan obyekt yaradmağa kömək edən metoddur.Əyər  constructor olmasa bir classdan defelerle yeni bir obyekt yarada bilmərik.Yəni sadəcə bir obyekt yarada bilərik.
      
  
  ### bir class-da nece eded construktor olabiler
@@ -57,7 +61,7 @@
  ### constructor ve metod arasindaki ferqler nelerdir
 
   *  constructor metodlar normal metodlardan ayıran əsas cəhət constructor metodlar vasitəsi ilə yeni yeni data yaradılır
-     .Normal metod lar var olan data ilə işləyə bilərlər.Fərlərdən biridə odurki constructor lar adlar cağırılmır onlar sadece yeni data yaradılan zaman paremetr vasitəsi ilə avtomatik çağırılır.Metodları isə class üzərindən cağırmaq mümkündür.
+     .Normal metod lar var olan data ilə işləyə bilərlər.Fərlərdən biridə odurki constructor lar adlar cağırılmır onlar sadece yeni data yaradılan zaman paremetr vasitəsi ilə    avtomatik çağırılır.Metodları isə class üzərindən cağırmaq mümkündür.
     
   
 
