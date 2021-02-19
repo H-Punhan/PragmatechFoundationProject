@@ -23,6 +23,7 @@ def find():
     for d in dostlar:
         if d.find('e') != -1:
             index+=1
+            print(d)
     return index
 f=find()
 print(f)
