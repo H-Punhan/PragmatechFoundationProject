@@ -84,3 +84,10 @@
     write(1,1)
     `
     Burada a,b  parametr 1,1 argument dir
+
+### iterator ve iterable nedir  ?
+
+  * iterator iterable obyekte iteration qazandiran obyektdir.
+    Iteration qabiliyeti olan obyektlere Iterable obyekt deyilir
+    Iterable obyektler uzerinde gezine bilen obyektlerdir.`for ve while ` kimi looplarla 
+    uzerinde gezmek mumkundur.Iterable obyektlere lists,array,dictionary ler aiddir.
