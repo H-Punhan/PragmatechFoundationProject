@@ -32,9 +32,8 @@ class customArray:
             self.index=-1
             raise StopIteration
 
-        
-    
 c=customArray([1,1,1,1]) 
+
 for a in c:
     print(a)
     
