@@ -1,4 +1,5 @@
 #besinci
+data=[]
 id=0
 class kitabevi():
     def __init__(self,ad,qiymet,yazar):
@@ -14,6 +15,7 @@ class kitabevi():
 
 kitab=kitabevi('Harry Potter',30,'Jk rowling')
 kitab.write()
+data.append(kitab)
 
 kitab=kitabevi('Harry Potter',30,'Jk rowling')
 kitab.write()
