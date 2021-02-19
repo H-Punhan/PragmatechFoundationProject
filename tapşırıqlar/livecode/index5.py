@@ -2,13 +2,18 @@
 id=0
 class kitabevi():
     def __init__(self,ad,qiymet,yazar):
+        global id
+        id+=1
         self.ad=ad
         self.qiymet=qiymet
         self.yazar=yazar
-    
+        self.id=id
 
     def write(self):
-        print(self.ad,self.qiymet,self.yazar)
+        print(self.id,self.ad,self.qiymet,self.yazar)
+
+kitab=kitabevi('Harry Potter',30,'Jk rowling')
+kitab.write()
 
 kitab=kitabevi('Harry Potter',30,'Jk rowling')
 kitab.write()
