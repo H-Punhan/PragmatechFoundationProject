@@ -2,8 +2,12 @@ myList=[1,34,56,100,-12,87,987,1,3,5,56,67]
 
 #1
 def listlen():
-    print(len(myList))
+    length=0
+    for m in myList:
+        length+=1
+    print(length)
 listlen()
+
 
 #2
 def listprint():
@@ -75,3 +79,6 @@ def bigindex():
     myList=sorted(myList)
     print(myList[len(myList)-1])
 bigindex()
+
+
+
