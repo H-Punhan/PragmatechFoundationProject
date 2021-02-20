@@ -18,9 +18,9 @@ listprint(myList)
 
 #3
 def listeven(p):
-    for m in p:
+    for m in range(len(p)):
         if m%2==0:
-            print(m)
+            print(p[m])
 
 listeven(myList)
 
@@ -43,12 +43,11 @@ listdublicate(myList)
 
 #6
 def listnoteven(p):
+    for m in range(len(p)):
+          if m%2>0:
+              p.remove(p[m])
     for m in p:
-        if m%2>0:
-            p.remove(m)
-
-    for m in p:
-        print(m)   
+         print(m,deyer)
     
 listnoteven(myList)
 
