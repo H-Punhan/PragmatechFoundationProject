@@ -1,84 +1,86 @@
 myList=[1,34,56,100,-12,87,987,1,3,5,56,67]
 
 #1
-def listlen():
+def listlen(p):
     length=0
-    for m in myList:
+    for m in p:
         length+=1
     print(length)
-listlen()
+listlen(myList)
 
 
 #2
-def listprint():
-    for m in myList:
+def listprint(p):
+    for m in p:
         print(m)
 
-listprint()
+listprint(myList)
 
 #3
-def listeven():
-    for m in myList:
+def listeven(p):
+    for m in p:
         if m%2==0:
             print(m)
 
-listeven()
+listeven(myList)
 
 #4
-def listsort():
-    for m in reversed(sorted(myList)) :
+def listsort(p):
+    for m in reversed(sorted(p)) :
        print(m)
 
-listsort()
+listsort(myList)
 
 #5
-def listdublicate():
+def listdublicate(p):
     global myList
     myList=sorted(myList)
-    for m in range(len(myList)-1):
+    for m in range(len(p)):
         if myList[m] == myList[m-1]:
             print(myList[m])
 
-listdublicate()
+listdublicate(myList)
 
 #6
-def listnoteven():
-    for m in myList:
+def listnoteven(p):
+    for m in p:
         if m%2>0:
             myList.remove(m)
 
-    for m in myList:
+    for m in p:
         print(m)   
     
-listnoteven()
+listnoteven(myList)
 
 #7
-def reverseList():
-    for m in reversed(myList):
+def reverseList(p):
+    for m in reversed(p):
         print(m)
 
-reverseList()
+reverseList(myList)
 
 #8 
-def sumList():
-    print(sum(myList))
-
-sumList()
+def sumList(p):
+    len=0
+    for m in p:
+      len+=m
+    print(len)
+sumList(myList)
 
 #9
-def smallindex():
-    global myList
-    myList=sorted(myList)
-    print(myList[0])
+def smallindex(p):
+    
+    p=sorted(p)
+    print(p[0])
 
-smallindex()
+smallindex(myList)
 
 #10
-def bigindex():
-    global myList
-    myList=sorted(myList)
-    print(myList[len(myList)-1])
-bigindex()
+def bigindex(p):
+    
+    p=sorted(p)
+    print(p[len(p)-1])
+bigindex(myList)
 
 
 
