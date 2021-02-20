@@ -33,11 +33,11 @@ listsort(myList)
 
 #5
 def listdublicate(p):
-    global myList
-    myList=sorted(myList)
+    
+    P=sorted(p)
     for m in range(len(p)):
-        if myList[m] == myList[m-1]:
-            print(myList[m])
+        if p[m] == p[m+1]:
+            print(p[m])
 
 listdublicate(myList)
 
@@ -45,7 +45,7 @@ listdublicate(myList)
 def listnoteven(p):
     for m in p:
         if m%2>0:
-            myList.remove(m)
+            p.remove(m)
 
     for m in p:
         print(m)   
