@@ -55,7 +55,6 @@ def listdublicate(p):
 
 #6
 def listnoteven(p):
-    print(myList)
     for m in range(0,len(p)):
         if m%2>0:
             p[m]='zero'
@@ -64,7 +63,7 @@ def listnoteven(p):
         
     print(myList)
        
-listnoteven(myList)
+#listnoteven(myList)
 
 #7
 def reverseList(p):
