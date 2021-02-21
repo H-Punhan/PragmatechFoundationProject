@@ -46,7 +46,8 @@ def listdublicate(p):
             if p[m]==ar[a]:
                 testindex+=1
                 if testindex==2:
-                    result.append(p[m])
+                    if p[m] not in result:
+                        result.append(p[m])
 
         testindex=0
     print(result)
