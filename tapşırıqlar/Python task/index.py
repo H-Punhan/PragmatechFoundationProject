@@ -6,7 +6,8 @@ def listlen(p):
     for m in p:
         length+=1
     print(length)
-listlen(myList)
+
+#listlen(myList)
 
 
 #2
@@ -14,41 +15,55 @@ def listprint(p):
     for m in p:
         print(m)
 
-listprint(myList)
+#listprint(myList)
 
 #3
 def listeven(p):
-    for m in range(len(p)):
+    for m in range(0,len(p)):
         if m%2==0:
             print(p[m])
 
-listeven(myList)
+#listeven(myList)
 
 #4
 def listsort(p):
     for m in reversed(sorted(p)) :
        print(m)
 
-listsort(myList)
+#listsort(myList)
 
 #5
 def listdublicate(p):
-    
-    P=sorted(p)
-    for m in range(len(p)):
-        if p[m] == p[m+1]:
-            print(p[m])
+    p=sorted(p)
+    ar=[]
+    result=[]
+    testindex=0
+    for m in p:
+        ar.append(m)
 
-listdublicate(myList)
+    for m in range(0,len(p)):
+        for a in range(0,len(ar)):
+            if p[m]==ar[a]:
+                testindex+=1
+                if testindex==2:
+                    result.append(p[m])
+
+        testindex=0
+    print(result)
+
+#listdublicate(myList)
 
 #6
 def listnoteven(p):
-    for m in range(len(p)):
-          if m%2>0:
-              p.remove(p[m])
+    print(myList)
+    for m in range(0,len(p)):
+        if m%2>0:
+            p[m]='zero'
     for m in p:
-         print(m,deyer)
-    
+        p.remove('zero')
+        
+    print(myList)
+       
 listnoteven(myList)
 
 #7
@@ -56,7 +71,7 @@ def reverseList(p):
     for m in reversed(p):
         print(m)
 
-reverseList(myList)
+#reverseList(myList)
 
 #8 
 def sumList(p):
@@ -64,7 +79,7 @@ def sumList(p):
     for m in p:
       len+=m
     print(len)
-sumList(myList)
+#sumList(myList)
 
 #9
 def smallindex(p):
@@ -72,14 +87,14 @@ def smallindex(p):
     p=sorted(p)
     print(p[0])
 
-smallindex(myList)
+#smallindex(myList)
 
 #10
 def bigindex(p):
     
     p=sorted(p)
     print(p[len(p)-1])
-bigindex(myList)
+#bigindex(myList)
 
 
 

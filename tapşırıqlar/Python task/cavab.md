@@ -52,9 +52,18 @@
     * Class İçindəki özəllikləri istifadə üçün istifadə olunur.Class larda istifadə olunarkən `__init__` metoduna  və    digər metodlara `self` parametr olaraq verilmelidir.
       self  yazıldığı class-ı ifadə edir .İçindəki property-leri istifade etmek istəyiriksə `self.Propname`  yazırıq
 ## *args,*kwargs nədir? nə zaman istifadə olunur?
+    * args funksiyalarda islenen bir parametrdir.Funksiyada islenen zaman  istediyimiz qeder
+      parametr gondermek isteyirik burada komeyimize args catir eyer `*argName` yazarsaq bu bize `tuple` qayıdar
+      
+    * kwargs ise  funksiyada  parametre `**kwargsName` yazırıq buda bizə `dict` qaytarır
 ## Python module nədir?
+    * Pythonda hazır kodları bir cox yerdə istifadə etmək istəyirik ve onu ayrı bir python faylına yazıb istədiyimiz    
+      python faylında cağıra bilirik .Cağırdığımız bu fayl module adlanır.Modullar iki yerə ayrılır.Bizim yazdığımız ve 
+      hazır modullar.
 ## Python package nədir?
+    * Modullardan ibaret bir fayldır.
 ## pass nədir? Nə zaman istifadə olunur?
+    * Python da funksyanı və ya bəzi kodları boş buraxmaq istəyiriksə funksyanın içinə pass kəliməsi əlavə edilir.
 ## List metodlarından 5 ədəd metodun izahatını yazın
 ## List və dict hansı hallarda istifadə olunur?
 ## Dict metodlarından 5 ədəd metodun izahatını yazın
