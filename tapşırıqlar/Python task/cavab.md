@@ -32,7 +32,10 @@
       gorulen isleri parcalara ayirmaq ve az kod yazaraq zaman qazanmaga komek edir.Class komeyi ile yaranan obyektlerde metod yazib istediyimiz vaxt istediyimiz yerde cagira bilerik.Buda bize eksta komek olur.
 
 ## Proqram yazarkən metodlardan istifadə edirik. Hansı hallarda metod istifadə edilməlidir?
-    * 
+    * Metodlar istenilen 
+    hallarda istifade edile biler.Meselen uzun bir metnin uzunlugu tapmaq,
+    listden bir deyer silmek veya elave etmek kimi bir cox işlerde istifade olunur
+    
     
 ## local və global variable nədir izah edin
     * variable-yaradan vaxt onun hara yerləşdiyi önəmlidir.Əyər var-ı istədiyiniz yerdən cağıra biləsiniz onda `globalda`
@@ -65,5 +68,20 @@
 ## pass nədir? Nə zaman istifadə olunur?
     * Python da funksyanı və ya bəzi kodları boş buraxmaq istəyiriksə funksyanın içinə pass kəliməsi əlavə edilir.
 ## List metodlarından 5 ədəd metodun izahatını yazın
+    * append() liste element elave etmek ucun istifade olunur
+    * remove() listden element silmek ucun istifade olunur
+    * pop() icine verilen index deyeri uzre element silir
+    * sort() listdeki elementleri siralayir
+    * reverse() listdeki elementleri tersine edir
 ## List və dict hansı hallarda istifadə olunur?
+    * Elimizde sadece adlar var bu adları ve onları bir data içine yığmalıyıq 
+    liste yığaraq bizim üçün semereli olacaq
+    * Bude fe ise elimizde bir cox insana aid detallı melumat var amma liste yığa bilmerik
+    çünkı onları elde etmeye çalîşsaq bu melumatların kime aid oldugunu bilmeyeceyik 
+    Eyer onları dicte elave etsek  melumatları elde etmek daha asan olacaq
 ## Dict metodlarından 5 ədəd metodun izahatını yazın
+    * pop() verilen keyi silir
+    * clear() butun keyleri silir
+    * copy() listin kopyasını qaytarır
+    * get() secilmis keyin deyerini gosterir
+    * update() verilen keyin deyerini deyisir 
