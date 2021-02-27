@@ -179,3 +179,19 @@
     * copy() listin kopyasını qaytarır
     * get() secilmis keyin deyerini gosterir
     * update() verilen keyin deyerini deyisir 
+
+
+# Yeni suallar
+## Python class nədir?
+  * Sadə yolla desək class-obyekt yardamaga komek eden bir şablondur.Örnək olaraq bir maşın zavodumuz var.Burada maşına aid olan ortaq ozəlliklər var.Bu  özəlliklərlə  biz bu zavodu istifadə edə bilmərik amma bu zavod vasitəsi minlərlə ilə yeni maşınlar düzəldə bilərik.Bu düzəltəcəyimiz maşının adı obyektdir.
+## Python object nədir?
+  * Proqramlamada gördüyümüz hər şey obyektdir.Yəni real həyatdan istənilən canlı və cansız hər şeyi obyekt olaraq ifadə edə bilərik.Bu obyektlərin real həyatdakı özəlliklərini obyektə əlavə edə bilərik.
+## Python construktor nədir?
+  * Bu metod bir class-ın qurucu metodudur.Bu metod vasitəsi ilə ibyektlə yaradılır.Əyər bu metod istifadə edilməsə belə class-ın sadəcə bir obyekt yaradmağa kömək edən default bir constructoru olur.Bu metodlar yalnız bir obyekti yaradarkən çağrılır yəni onları çağıra bilmərik.
+## object property nədir
+  * Bir obyektin əsas hissəsi olan propert-lər obyektin novunə görə dəyişiklik göstərə bilər.Məsələn adı soyadı yası kimi 
+  məlumatlar daşıyan hissələr property lər sayılır.
+## objct method nədir
+  * kod təkrarını azaldmaq üçün yazılan hazır kod parçalarıdır.Metodlar iki yerə ayrılır hazır metodlar və sonradan yazılan metodlar.Metodlar yaradıldığı classın propertyləri ilə işləyə bilir ve class üzərindən cağrıla bilir.
+
+## oop inheritance nədir?
