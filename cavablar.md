@@ -195,3 +195,4 @@
   * kod təkrarını azaldmaq üçün yazılan hazır kod parçalarıdır.Metodlar iki yerə ayrılır hazır metodlar və sonradan yazılan metodlar.Metodlar yaradıldığı classın propertyləri ilə işləyə bilir ve class üzərindən cağrıla bilir.
 
 ## oop inheritance nədir?
+  * İnheritance (`miras`) bir classın başqa  bir classdakı özəlliklərə sahib olmasına deyilir.Bunu daha aydın başa düşmək ücün təsəvvür edin ki iki classımz var İnsan və İnsan2.İnsan classında hər insanda olan özəlliklər olsun ad və soyad kimi.İndi isə İnsan2 İnsan classındakı özəllikləri miras alsın və hər insanda olmayan özəllikləri bu class-a əlavə edək.Beləliklə biz bu class-ı yaradanda oradakı ortaq özəllikləri bu class-a əlavə etməyəcəm çünki bu class digər clasdakı özəllikləri oradan artıq miras götürüb.
