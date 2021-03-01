@@ -10,14 +10,18 @@ class possibleList:
             self.testlist.append(a)
             if self.testlist not in self.newlist:
                 self.newlist.append(self.testlist)
-            
-            self.testlist=[]
-            self.testlist.append(self.li[l])
-            for x in self.li:
-                if x not in self.testlist:
-                    self.testlist.append(x)
-                    print(self.testlist)
                 self.testlist=[]
-        print(sorted(self.newlist))
-possibleList([4,5,6,8,9]).show()
+                for x in range(0,len(self.li)):
+                    if self.li[l] != self.li[x]:
+                        self.testlist.append(self.li[x])
+                        self.testlist.append(self.li[l])
+                        self.testlist.sort()
+                        if self.testlist not in self.newlist:
+                            self.newlist.append(self.testlist)
+                        self.testlist=[]
+            self.testlist=[]
+                
+            
+        print(self.newlist)
+possibleList([4,5,6,7,8,9]).show()
         

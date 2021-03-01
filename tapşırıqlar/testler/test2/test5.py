@@ -18,7 +18,4 @@ class Findsumindex:
           
         return self.result
         
-        
-
-
 print(Findsumindex().find( 70,[10,20,10,40,50,60,70]))
