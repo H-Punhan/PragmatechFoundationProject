@@ -13,7 +13,7 @@ def result():
         if request.form['num1']=='' or request.form['num2'] ==' ':
             return redirect('/')
         else:
-            return render_template('result.html',result=int(request.form['num1'])+int(request.form['num2']))
+            return render_template('index.html',result=int(request.form['num1'])+int(request.form['num2']))
     else:
         return redirect('/')
     
