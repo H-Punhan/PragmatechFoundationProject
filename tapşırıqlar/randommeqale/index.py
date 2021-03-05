@@ -9,16 +9,8 @@ foundation11=[
         'soyad':'Mirzeyeva'
     },
     {
-        'ad':'Huseyn',
-        'soyad':'Ehmedzade'
-    },
-    {
         'ad':'Orxan',
         'soyad':'Babazade'
-    },
-    {
-        'ad':'Ibrahim',
-        'soyad':'Huseynov'
     },
     {
         'ad':'Orxan',
@@ -27,10 +19,6 @@ foundation11=[
      {
         'ad':'Fatime',
         'soyad':'Yaqubova'
-    },
-     {
-        'ad':'Ferid',
-        'soyad':'Kerimli'
     },
     {
         'ad':'Togrul',
@@ -57,13 +45,21 @@ foundation11=[
         'soyad':'Sadiqzade'
     }
 ]
-meqale=['OOP nedir ?',
-'Modul nedir ?','Class nedir ?' ,'Inheritence nedir ?','Polymorphmism nedir ?',
-'Encapsulation nedir','Return nedir ?','Interpreter nedir ?','Compiler nedir ?',
-'Constructor nedir ?','Metod nedir ?','Decarator nedir ?','Virtual enviroment nedir ?','Package nedir ?']
+meqale=['Flask SQLAlchemy nədir və necə istifadə olunur?',
+'Flask SQLAlchemy ile SQLAlchemy arasındakı fərqlər nələrdir?',
+ 'Flask Migration nədir və diqqət olunması lazım olan məqamla',
+' Python OOP yanaşmasının ətraflı izah',
+ 'Python dekorator,generator nədir və istifadə yerləri',
+ 'Python module ve package istifadəsi ',
+ 'Python dunder methodlar haqqinda' ,
+ 'Python vasitesi ilə mini desktop tətbiqi yazmaq',
+'WSGI nədir? İşləmə prinsipi necədir?',
+ 'Jinja template sistemi necə istifadə olunmalıdır?',
+'Flask fayll'
+]
 added=[]
 added2=[]
-
+added3=[]
 def meqaleelaveet(f,m):
     
     
