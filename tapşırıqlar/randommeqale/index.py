@@ -78,7 +78,7 @@ def meqaleelaveet(f,m):
             "soyad":i['soyad']
             }
             if o2 not in added3:
-                print(o)
+                
                 added3.append(o2)
                 added.append(o)
                 added2.append(r)
