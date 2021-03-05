@@ -71,10 +71,19 @@ def meqaleelaveet(f,m):
     for i in f:
         r=m[random.randrange(0,len(m))]
         if  r not in added2:
-            added.append({'ad':i['ad'],
+            o={'ad':i['ad'],
             "soyad":i['soyad'],
-            "meqale":r})
-            added2.append(r)
+            "meqale":r}
+            o2={'ad':i['ad'],
+            "soyad":i['soyad']
+            }
+            if o2 not in added3:
+                print(o)
+                added3.append(o2)
+                added.append(o)
+                added2.append(r)
+            else:pass
+            
 
            
         
