@@ -7,18 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form action="/result" method="POST">
-        <input type="text" name="num1" id="">
-        <input type="text" name="num2" id="">
-        <button stype='submit'>submit</button>
-
-    </form>
-    
-    {% if error %}
-    bos buraxila bilmez
-    {% endif %}
-    {{result}}
-    
+    {% for i in users %}
+    <div>
+        <h2>{{i.title}}</h2>
+        <p>{{i.content}}</p>
+    </div>
+    {% endfor %}
 </body>
 </html>
