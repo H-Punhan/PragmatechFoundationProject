@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        #head,#body{
+            width:40%;
+            margin-left:30%;
+            margin-top:10px;
+            background-color: whitesmoke;
+            padding:20px;
+        }
+        #head form{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        #text{
+            width:80%;
+            height:30px;
+            border:none;
+        }
+        #btn{
+            width:20%;
+            height:30px;
+            border:none;
+            background-color: teal;
+            color:white;
+        }
+        ol{
+            padding: 10px;
+            background-color: teal;
+            color:white;
+            margin-top:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        ol a{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <form action="/updatelink/{{data.id}}" method="POST">
+           
+        <input type='text' id='text' name='title' value='{{data.title}}' placeholder="todo name">
+        
+        <input type="submit" value="update" id='btn'>
+        </form>
+      
+
+    </div>
+    
+
+    
+    
+</body>
+</html>
