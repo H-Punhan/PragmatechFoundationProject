@@ -12,36 +12,9 @@ class todos(db.Model):
 
 @app.route('/')
 def index():
-    todo=todos.query.all()
-    return render_template('crud/crud.html',data=todo)
-@app.route('/add',methods=['GET','POST'])
-def add():
-    if request.method=='POST' and request.form['title']!='':
-        new=todos(title=request.form['title'])
-        db.session.add(new)
-        db.session.commit()
-        return redirect('/')
-    else:return redirect('/')
-
-@app.route('/updatelink/<id>',methods=['GET','POST'])
-def updatelink(id):
-    updateduser=todos.query.filter_by(id=id).first()
-    if request.method=='POST':
-        updateduser.title=request.form['title']
-        db.session.commit()
-        return redirect('/')
-    return render_template('crud/crudupdate.html',data=updateduser)
-
-
     
+    return render_template('index.html')
 
-@app.route('/delete/<id>',methods=['GET','POST'])
-def delete(id):
-    de=todos.query.filter_by(id=id).first()
-    db.session.delete(de)
-    db.session.commit()
-    return redirect('/')
-    
 
     
     

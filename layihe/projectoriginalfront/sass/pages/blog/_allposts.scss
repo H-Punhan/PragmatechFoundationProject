@@ -1,0 +1,95 @@
+#all-posts{
+    width:85.61%; 
+    font-size:19px;
+    
+    margin:60px auto;
+    color:$main-color-black;
+
+    #post-item{
+        margin:50px 0px;
+        width:100%;
+       
+            
+            // #inner-post:last-child{
+            //     border-bottom: 1px solid lightgrey;
+            // }
+
+            img{
+                width:100%;
+                height: auto;
+                max-width: 100%;
+                object-fit: cover;
+                
+                @media(max-width:1200px){
+                    width:90%;
+                    margin-left:5%;
+                }
+            }
+
+            #inner-post{
+            width:90%;
+            margin:30px auto;
+         
+            
+            
+            #inner-post-tag{
+                color:$main-color-black;
+                text-decoration: none;
+                font-size:12px;
+                
+                &:hover{
+                    color:$main-color-blue;
+                    
+                }
+            }
+            
+            #about-post{
+                width:100%;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px 10px;
+                border-radius: 7px;
+                border:2px solid #E5E5E5;
+    
+                div{
+                    display: flex;
+                    width:30%;
+                    justify-content: space-between;
+                    align-items:center;
+                    font-size:12px;
+                    i{
+                        font-size: 12px;
+                        color:grey;
+                    }
+    
+                    @media(max-width:700px){
+                        font-size: 10px;
+                    }
+                }
+            }
+
+           
+            }
+
+            #inner-post-2{
+                width:90%;
+                margin:30px auto;
+                height:150px;
+                overflow: hidden;
+                p{
+                    color:grey;
+                    font-size:15px;
+                }
+               
+            }
+
+            #read-more{
+                margin-left:5%;
+                color:$main-color-blue;
+                text-decoration: none;
+                margin:30px 5%;
+                
+            }
+    }
+}
