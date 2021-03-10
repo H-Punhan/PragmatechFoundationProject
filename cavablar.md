@@ -196,3 +196,11 @@
 
 ## oop inheritance nədir?
   * İnheritance (`miras`) bir classın başqa  bir classdakı özəlliklərə sahib olmasına deyilir.Bunu daha aydın başa düşmək ücün təsəvvür edin ki iki classımz var İnsan və İnsan2.İnsan classında hər insanda olan özəlliklər olsun ad və soyad kimi.İndi isə İnsan2 İnsan classındakı özəllikləri miras alsın və hər insanda olmayan özəllikləri bu class-a əlavə edək.Beləliklə biz bu class-ı yaradanda oradakı ortaq özəllikləri bu class-a əlavə etməyəcəm çünki bu class digər clasdakı özəllikləri oradan artıq miras götürüb.
+
+
+## Jinja template nədir? Necə istifadə olunur?
+  * Python üçün html ilə əlaqə qurmaq üçün yaradılmış şablondur.Jinja package fromasında istifadə olunur amma flask yükləyərkən flask ilə birlikdə yüklənir və əlavə package yükləməyə ehtiyac qalmır.Jinja ilə bir dəfə html şablonu yazaraq bir faylı bir çox yerdə istifadə edə bilərsiniz.Flask ilə göndərilən dinamik datalar jinja vasitəsi ilə htmldə
+  istifadə olunur
+  
+## Database migration nədir necə istifadə olunur?
+  * Bir dbdakı  dataların başqa bir db-ya köçürülmə prosesi deyilir.Migration üçün iki seçiminiz var.İLk olaraq migration etməmişdən əvvəl istifadə edəcəyiniz dili və onun framework-nu seçin.Sonra migration edərkən kod sətiri vəya həmin dildə migration edilmə qaydasını öyrənib edə bilərsiniz.İkincisi isə db migration üçün yaradılmış bəzi programlardan istifadə edə bilərsiniz.Flyway ve Liquidbase kimi.Bu proqramlardan istifade ederken her hansı bir  dilə bağlı olmaqdan qurtula bilərsiniz.
