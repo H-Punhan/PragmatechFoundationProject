@@ -280,6 +280,21 @@
                                     
                 
                                 </div>
+
+                                {% for  i in skil %}
+                                <div id='skill-bar'>
+                
+                                    <div id='skill-bar-text'>
+                                        <h4>{{i.name}}</h4>
+                                        <p >{{i.level}}%</p>
+                                    </div>
+                                    <div id='skill-bar-bar' >
+                                        <div id='inner-skill-bar-bar' class='load-bar' name='{{i.level}}'></div>
+                                    </div>
+                                    
+                
+                                </div>
+                                {% endfor  %}
                                
                                
                                
@@ -290,8 +305,16 @@
                             <div id="knowledges-div">
                                 <h3>Knowledges</h3>
                                 <div id='knowledge-row'>
-                
-                                    <div id='knowledge-item'><div id='inner-knowledge-item'>
+                                    
+
+                                    {% for i in data%}
+                                    <div id='knowledge-item'>
+                                        <div id='inner-knowledge-item'>
+                                            {{i.name}}
+                                        </div> 
+                                    </div>
+                                    {% endfor %}
+                                    <!-- <div id='knowledge-item'><div id='inner-knowledge-item'>
                                         Html
                                     </div> </div>
                 
@@ -313,7 +336,7 @@
                                     </div> </div>
                                     <div id='knowledge-item'><div id='inner-knowledge-item'>
                                         Flask 
-                                    </div> </div>
+                                    </div> </div> -->
                                     
                                     
                                 
@@ -357,7 +380,8 @@
     </div>
     <!-- script -->
     <script src='../static/js/main.js'></script>
-    <script src="../static/js/loadingbar.js"></script>
+    <script src='../static/js/loadingbar.js'></script>
+
    
 
 </body>

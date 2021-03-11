@@ -1013,7 +1013,6 @@ body, html {
 #resume-div #resume-div-row #resume-div-row-part-2 #skills-div #skill-bar #skill-bar-bar #inner-skill-bar-bar {
   padding: 2px;
   height: 100%;
-  width: 100%;
   border-radius: 10px;
   background-color: #04B4E0;
 }
