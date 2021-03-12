@@ -15,116 +15,20 @@
 
 
     <!--Search bar -->
+    {% include 'base/searchbar.html' %}
 
-    <div id='search-bar'>
-        <button id='search-bar-open-button'><i class="fas fa-list"></i></button>
-        <div id='search-bar-2'>
-
-        
-
-        <div id='search-bar-inner-search-bar'>
-
-            <input type='text' placeholder="Search" ><button><i class="fas fa-search"></i></button>
-
-        </div>
-        
-
-        <div id="recent-post">
-            
-
-            <div id='inner-recent-post'>
-                <h4>Recent Posts</h4>
-            
-                <ul>
-                
-                    <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet. </li>
-                </br>
-                    <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet.</li>
-                </br>
-                    <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet..</li>
-                </br>
-                <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet..</li>
-                 </br>
-                <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet..</li>
-                </ul>
-                
-
-
-
-
-            </div>
-        </div>
-
-        <div id="recent-comment">
-            <div id='inner-recent-comment'>
-                <h4>Recent Comment</h4>
-            
-                <ul>
-                
-                    <li>Lorem, ipsum dolor Lorem, ipsum.. Lorem ipsum dolor sit amet. </li>
-                
-                </ul>
-                
-
-
-
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Mobile menu open/close button -->
-    <button id="responsive-menu-button">
-        <i class="fas fa-bars"></i>
-    </button>
+    <!-- mobile menu button -->
+    {% include 'base/mobilemenubutton.html' %}
 
     <!-- Mobile menu -->
-    <div id="responsive-menu">
-
-        <div id="inner-responsive-menu">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbkzjG9fJ5xhklhWMgHgOJfNkBnQtF0bOwA&usqp=CAU" alt="">
-        </br>
-            <div id='text'>
-
-                <h2>Punhan Huseynov</h2>
-                <p>Web Developer</p>
-
-            </div>
-        </br>
-            <div id='nav-menu'>
-
-                <a href="index.html">About Me</a>
-            </br>
-                <a href="resume.html">Resume</a>
-            </br>
-            <a href="portfolio.html">Portfolio</a>
-            </br>
-                <a href="blog.html">Blog</a>
-            </br>
-                <a href="contact.html">Contact</a>
-
-
-            </div>
-        </br>
-            <div id='social'>
-                <a href=""> <i class="fab fa-twitter"></i></a>
-                <a href=""> <i class="fab fa-github"></i></a>
-                <a href=""> <i class="fab fa-google"></i></a>
-            </div>
-
-        </div>
-
-    </div>
+    {% include 'base/mobilemenu.html' %}
 
     <!-- Mobile Header -->
-    <a href="#" id='mobile-header'>
-        Punhan Huseynov
-    </a>
-
+    {% include 'base/mobileheader.html' %}
     
-    <!-- Container -->
+    <!-- Mobile Navabr Arrow -->
+    {% include 'base/mobilenavbararrow.html' %}
+    
     <div id="container">
 
         

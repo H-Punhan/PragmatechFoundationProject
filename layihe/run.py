@@ -1,11 +1,11 @@
-from flask import Flask,render_template,request,redirect
+from flask import Flask,render_template,redirect,request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///db/test.db'
 db=SQLAlchemy(app)
 migrate=Migrate(app,db)
+
 class knowledges(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String(50))
@@ -41,7 +41,7 @@ def add():
     
     return render_template('admin/add.html')
 
-@app.route('/admin/add/addknowledge',methods=['GET','POST'])
+@app.route('/admin/add/knowledge',methods=['GET','POST'])
 def admin_add_know():
     if request.method=='POST' and request.form['know']!='':
         know=knowledges(name=request.form['know'])
@@ -49,9 +49,9 @@ def admin_add_know():
         db.session.commit()
         return redirect('/resume')
 
-    return render_template('admin/addknowledge.html')
+    return render_template('admin/knowledge.html')
 
-@app.route('/admin/add/addskills',methods=['GET','POST'])
+@app.route('/admin/add/skills',methods=['GET','POST'])
 def admin_add_skills():
     if request.method=='POST':
         if request.form['skillname']!='' and request.form['skilllevel']!='':
@@ -61,13 +61,25 @@ def admin_add_skills():
                 db.session.commit()
                 return redirect('/resume') 
         
-    return render_template('admin/addskills.html')
+    return render_template('admin/skills.html')
 
+@app.route('/admin/add/education',methods=['GET','POST'])
+def admin_add_education():
+    if request.method=='POST':
+        year=request.form['year']
+        schol=request.form['school']
+        les=request.form['lesson']
+        des=request.form['description']
+        if year!='' and schol!='' and les!='' and des!='':
+            data=education(year=year,school=schol,lesson=les,description=des)
+            db.session.add(data)
+            db.session.commit()
+            return redirect('/resume')
+    return render_template('admin/education.html')
 # --------------------------------
 
 @app.route('/')
 def index():
-    
     return render_template('index.html')
 
 @app.route('/about')
@@ -79,7 +91,8 @@ def about():
 def resume():
     kno=knowledges.query.all()
     skill=skills.query.all()
-    return render_template('resume.html',data=kno,skil=skill)
+    educations=education.query.all()
+    return render_template('resume.html',data=kno,skil=skill,edu=educations)
 
 
 @app.route('/portfolio')
@@ -97,7 +110,9 @@ def contact():
     
     return render_template('contact.html')
 
-
+@app.route('/post')
+def post():
+    return render_template('post.html')
 
     
     
