@@ -1,9 +1,5 @@
-from app import app
-from app import render_template
+import importlib
+a=importlib.util.find_spec('app.py',path=None)
+print(a)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
-if __name__=='__main__':
-    app.run(debug=True)
