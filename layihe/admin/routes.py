@@ -3,8 +3,8 @@ from model import *
 @app.route('/admin')
 def admin():
     
-    return render_template('admin/admin.html')
-@app.route('/admin/add/')
+    return render_template('admin/src/index.html')
+@app.route('/admin/add')
 def add():
     
     return render_template('admin/add.html')
