@@ -4,10 +4,18 @@ from model import *
 def admin():
     
     return render_template('admin/src/index.html')
-@app.route('/admin/add')
+@app.route('/admin/profile')
+def profile():
+    return render_template('admin/src/profile.html')
+@app.route('/admin/add/')
 def add():
     
-    return render_template('admin/add.html')
+    return render_template('admin/src/add.html')
+
+@app.route('/admin/add/author')
+def admin_add_author():
+    
+    return render_template('admin/src/authors.html')
 
 @app.route('/admin/add/knowledge',methods=['GET','POST'])
 def admin_add_know():
@@ -61,6 +69,8 @@ def admin_add_experience():
             db.session.commit()
             return redirect('/resume')
     return render_template('admin/experience.html')
+
+
 
 
 
