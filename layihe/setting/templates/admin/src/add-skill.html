@@ -37,83 +37,31 @@
         <!-- partial -->
         <div class='main-panel'>
           <div class="content-wrapper">
-            <div class="row d-flex page-header card-body  align-items-center ">
+           
+            <div class="col-lg-10 m-auto card card-body" >
               
-                <h1 class="page-title">Dashboard</h1>
-                <div class="ml-auto"><a href="/admin/add" class="btn btn-success">Add</a></div>
                 
+                <h1>Add Skill</h1>
               
-              
-              
-            </div>
-
-            <div class="row">
-
-              <div class='col-lg-6 card-body '>
-                <h3>Last Comments</h3>
-                <div class='card-body card'>
-                  
-                  <table class="table table-hover">
-                  
-                    <thead><tr>
-                      <th>
-                      id
-                    </th>
-                    <th>
-                      name
-                    </th>
-                    <th>
-                      surname
-                    </th>
-                  
-                  </tr></thead>
-
-                  <tr>
-                  <td>1</td>
-                  <td>Punhan</td>
-                  <td>Huseynov</td>
-                
-                  </tr>
-                  
-                    
-                  </table>
-
+              <form action="/admin/add/skills" method='POST'class="forms-sample col-12" enctype="multipart/form-data" >
+                <div class="form-group">
+                  <input type="text" name='skillname' id='exampleInputEmail1' class="form-control" placeholder="name">
                 </div>
-              </div>
-              <div class='col-lg-6 card-body '>
-                <h3>Last Messages</h3>
-                <div class='card-body card'>
-                  
-                  <table class="table table-hover">
-                  
-                    <thead><tr>
-                      <th>
-                      id
-                    </th>
-                    <th>
-                      name
-                    </th>
-                    <th>
-                      surname
-                    </th>
-                  
-                  </tr></thead>
-
-                  <tr>
-                  <td>1</td>
-                  <td>Punhan</td>
-                  <td>Huseynov</td>
-                
-                  </tr>
-                  
-                    
-                  </table>
-
+                <div class="form-group">
+                    <input type="text" name='skilllevel' id='exampleInputEmail1' class="form-control" placeholder="level">
                 </div>
-              </div>
+                
+                <div class="form-group ">
+                  <input type="submit" class="btn btn-primary" value="add">
+                </div>
+              
+              </form>
+            
+            </div>  
+            
               
             
-            </div>
+            
           </div>
         </div>
          

@@ -38,12 +38,29 @@
         <div class='main-panel'>
           <div class="content-wrapper">
            
-            <div >
-              <form action="/authors.html" method='POST'class="forms-sample col-6" >
-                <input type="text" name='name' class="form-control">
-                <textarea name="desc" id="" cols="30" rows="10 "class="form-control"></textarea>
-                <input type="file" class="form-control">
-            </form>
+            <div class="col-lg-10 m-auto card card-body" >
+              
+                
+                <h1>add author</h1>
+              
+              <form action="/admin/add/author" method='POST'class="forms-sample col-12" enctype="multipart/form-data" >
+                <div class="form-group">
+                  <input type="text" name='name' id='exampleInputEmail1' class="form-control" placeholder="fullname">
+                </div>
+                <div class="form-group">
+                  <textarea name="desc" id="" cols="30" rows="10 "class="form-control" placeholder="about"></textarea>
+                </div>
+                
+                  <div class="form-group">
+                    <input type='file' placeholder='upload image' name='img'>
+                  </div>
+               
+                <div class="form-group ">
+                  <input type="submit" class="btn btn-primary" value="add">
+                </div>
+              
+              </form>
+            
             </div>  
             
               

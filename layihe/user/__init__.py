@@ -2,12 +2,13 @@ from setting import app,render_template,redirect,request
 from model import *
 @app.route('/')
 def index():
-    return render_template('index.html')
+    about=authors.query.all()
+    return render_template('index.html',data=about)
 
 @app.route('/about')
 def about():
-    
-    return render_template('index.html')
+    about=authors.query.all()
+    return render_template('index.html',data=about)
 
 @app.route('/resume')
 def resume():

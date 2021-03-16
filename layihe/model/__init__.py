@@ -1,11 +1,11 @@
 from setting import db
 
+
 class authors(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     fullname=db.Column(db.String(50))
     about=db.Column(db.String(1000))
-    img=db.Column(db.String(50))
-
+    
 
 class knowledges(db.Model):
     id=db.Column(db.Integer,primary_key=True)

@@ -4,18 +4,28 @@ from model import *
 def admin():
     
     return render_template('admin/src/index.html')
+
 @app.route('/admin/profile')
 def profile():
-    return render_template('admin/src/profile.html')
+    data=authors.query.all()
+    return render_template('admin/src/profile.html',data=data)
+
 @app.route('/admin/add/')
 def add():
     
     return render_template('admin/src/add.html')
 
-@app.route('/admin/add/author')
+@app.route('/admin/add/author',methods=['GET','POST'])
 def admin_add_author():
-    
-    return render_template('admin/src/authors.html')
+    if request.method=='POST' and request.form['name']!='' and request.form['desc']!='':
+        
+        data=authors(fullname=request.form['name'],about=request.form['desc'])
+        db.session.add(data)
+        db.session.commit()
+        
+        return redirect('/admin/add/author')
+
+    return render_template('admin/src/add-authors.html')
 
 @app.route('/admin/add/knowledge',methods=['GET','POST'])
 def admin_add_know():
@@ -25,7 +35,7 @@ def admin_add_know():
         db.session.commit()
         return redirect('/resume')
 
-    return render_template('admin/knowledge.html')
+    return render_template('admin/src/add-know.html')
 
 @app.route('/admin/add/skills',methods=['GET','POST'])
 def admin_add_skills():
@@ -37,7 +47,7 @@ def admin_add_skills():
                 db.session.commit()
                 return redirect('/resume') 
         
-    return render_template('admin/skills.html')
+    return render_template('admin/src/add-skill.html')
 
 @app.route('/admin/add/education',methods=['GET','POST'])
 def admin_add_education():
