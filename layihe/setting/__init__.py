@@ -12,8 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db=SQLAlchemy(app)
 
 migrate=Migrate(app,db)
-
-import model
+from model import *
 from admin import routes
 import user
 
